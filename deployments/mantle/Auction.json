@@ -1,0 +1,163 @@
+{
+	"address": "0x7554fa6F01e8Dc237818AAed54204799544479aE",
+	"type": "proxy",
+	"abi": "[{\"type\":\"event\",\"anonymous\":false,\"name\":\"Approval\",\"inputs\":[{\"type\":\"address\",\"name\":\"owner\",\"indexed\":true},{\"type\":\"address\",\"name\":\"approved\",\"indexed\":true},{\"type\":\"uint256\",\"name\":\"tokenId\",\"indexed\":true}]},{\"type\":\"event\",\"anonymous\":false,\"name\":\"ApprovalForAll\",\"inputs\":[{\"type\":\"address\",\"name\":\"owner\",\"indexed\":true},{\"type\":\"address\",\"name\":\"operator\",\"indexed\":true},{\"type\":\"bool\",\"name\":\"approved\",\"indexed\":false}]},{\"type\":\"event\",\"anonymous\":false,\"name\":\"AuctionDurationSet\",\"inputs\":[{\"type\":\"uint256\",\"name\":\"duration\",\"indexed\":false}]},{\"type\":\"event\",\"anonymous\":false,\"name\":\"AuctionResolved\",\"inputs\":[{\"type\":\"address\",\"name\":\"pool\",\"indexed\":false},{\"type\":\"bool\",\"name\":\"resolution\",\"indexed\":false},{\"type\":\"address\",\"name\":\"winner\",\"indexed\":false}]},{\"type\":\"event\",\"anonymous\":false,\"name\":\"AuctionStarted\",\"inputs\":[{\"type\":\"address\",\"name\":\"pool\",\"indexed\":true},{\"type\":\"address\",\"name\":\"bidder\",\"indexed\":true}]},{\"type\":\"event\",\"anonymous\":false,\"name\":\"Bid\",\"inputs\":[{\"type\":\"address\",\"name\":\"pool\",\"indexed\":true},{\"type\":\"address\",\"name\":\"bidder\",\"indexed\":true},{\"type\":\"uint256\",\"name\":\"amount\",\"indexed\":false}]},{\"type\":\"event\",\"anonymous\":false,\"name\":\"BidIncrementalMaxAmountChanged\",\"inputs\":[{\"type\":\"uint256\",\"name\":\"maxAmount\",\"indexed\":false}]},{\"type\":\"event\",\"anonymous\":false,\"name\":\"BidIncrementalPercentChanged\",\"inputs\":[{\"type\":\"uint256\",\"name\":\"percent\",\"indexed\":false}]},{\"type\":\"event\",\"anonymous\":false,\"name\":\"Initialized\",\"inputs\":[{\"type\":\"uint8\",\"name\":\"version\",\"indexed\":false}]},{\"type\":\"event\",\"anonymous\":false,\"name\":\"OwnershipTransferred\",\"inputs\":[{\"type\":\"address\",\"name\":\"previousOwner\",\"indexed\":true},{\"type\":\"address\",\"name\":\"newOwner\",\"indexed\":true}]},{\"type\":\"event\",\"anonymous\":false,\"name\":\"Transfer\",\"inputs\":[{\"type\":\"address\",\"name\":\"from\",\"indexed\":true},{\"type\":\"address\",\"name\":\"to\",\"indexed\":true},{\"type\":\"uint256\",\"name\":\"tokenId\",\"indexed\":true}]},{\"type\":\"event\",\"anonymous\":false,\"name\":\"WhitelistedBidderSet\",\"inputs\":[{\"type\":\"address\",\"name\":\"bidder\",\"indexed\":false},{\"type\":\"bool\",\"name\":\"whitelisted\",\"indexed\":false}]},{\"type\":\"function\",\"name\":\"approve\",\"constant\":false,\"payable\":false,\"inputs\":[{\"type\":\"address\",\"name\":\"to\"},{\"type\":\"uint256\",\"name\":\"tokenId\"}],\"outputs\":[]},{\"type\":\"function\",\"name\":\"auctionDuration\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[],\"outputs\":[{\"type\":\"uint256\"}]},{\"type\":\"function\",\"name\":\"auctionInfo\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[{\"type\":\"address\"}],\"outputs\":[{\"type\":\"uint96\",\"name\":\"tokenId\"},{\"type\":\"address\",\"name\":\"lastBidder\"},{\"type\":\"uint256\",\"name\":\"lastBid\"},{\"type\":\"uint256\",\"name\":\"lastBlock\"},{\"type\":\"uint256\",\"name\":\"start\"},{\"type\":\"uint256\",\"name\":\"end\"},{\"type\":\"uint256\",\"name\":\"incrementalAmount\"}]},{\"type\":\"function\",\"name\":\"balanceOf\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[{\"type\":\"address\",\"name\":\"owner\"}],\"outputs\":[{\"type\":\"uint256\"}]},{\"type\":\"function\",\"name\":\"bid\",\"constant\":false,\"payable\":false,\"inputs\":[{\"type\":\"address\",\"name\":\"pool\"},{\"type\":\"uint256\",\"name\":\"amount\"}],\"outputs\":[]},{\"type\":\"function\",\"name\":\"bidIncrementInfo\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[],\"outputs\":[{\"type\":\"uint256\",\"name\":\"percent\"},{\"type\":\"uint256\",\"name\":\"maxAmount\"}]},{\"type\":\"function\",\"name\":\"factory\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[],\"outputs\":[{\"type\":\"address\"}]},{\"type\":\"function\",\"name\":\"getApproved\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[{\"type\":\"uint256\",\"name\":\"tokenId\"}],\"outputs\":[{\"type\":\"address\"}]},{\"type\":\"function\",\"name\":\"increaseBid\",\"constant\":false,\"payable\":false,\"inputs\":[{\"type\":\"address\",\"name\":\"pool\"},{\"type\":\"uint256\",\"name\":\"amount\"}],\"outputs\":[]},{\"type\":\"function\",\"name\":\"initialize\",\"constant\":false,\"payable\":false,\"inputs\":[{\"type\":\"address\",\"name\":\"factory_\"},{\"type\":\"uint256\",\"name\":\"auctionDuration_\"},{\"type\":\"uint256\",\"name\":\"minBidFactor_\"},{\"type\":\"tuple\",\"name\":\"incrementInfo_\",\"components\":[{\"type\":\"uint256\",\"name\":\"percent\"},{\"type\":\"uint256\",\"name\":\"maxAmount\"}]}],\"outputs\":[]},{\"type\":\"function\",\"name\":\"isApprovedForAll\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[{\"type\":\"address\",\"name\":\"owner\"},{\"type\":\"address\",\"name\":\"operator\"}],\"outputs\":[{\"type\":\"bool\"}]},{\"type\":\"function\",\"name\":\"isWhitelistedBidder\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[{\"type\":\"address\"}],\"outputs\":[{\"type\":\"bool\"}]},{\"type\":\"function\",\"name\":\"lastTokenId\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[],\"outputs\":[{\"type\":\"uint96\"}]},{\"type\":\"function\",\"name\":\"minBidFactor\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[],\"outputs\":[{\"type\":\"uint256\"}]},{\"type\":\"function\",\"name\":\"name\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[],\"outputs\":[{\"type\":\"string\"}]},{\"type\":\"function\",\"name\":\"owner\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[],\"outputs\":[{\"type\":\"address\"}]},{\"type\":\"function\",\"name\":\"ownerOf\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[{\"type\":\"uint256\",\"name\":\"tokenId\"}],\"outputs\":[{\"type\":\"address\"}]},{\"type\":\"function\",\"name\":\"ownerOfDebt\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[{\"type\":\"address\",\"name\":\"pool\"}],\"outputs\":[{\"type\":\"address\"}]},{\"type\":\"function\",\"name\":\"renounceOwnership\",\"constant\":false,\"payable\":false,\"inputs\":[],\"outputs\":[]},{\"type\":\"function\",\"name\":\"resolveAuction\",\"constant\":false,\"payable\":false,\"inputs\":[{\"type\":\"address\",\"name\":\"pool\"},{\"type\":\"bool\",\"name\":\"resolution\"}],\"outputs\":[]},{\"type\":\"function\",\"name\":\"resolveAuctionWithoutGoverment\",\"constant\":false,\"payable\":false,\"inputs\":[{\"type\":\"address\",\"name\":\"pool\"}],\"outputs\":[]},{\"type\":\"function\",\"name\":\"safeTransferFrom\",\"constant\":false,\"payable\":false,\"inputs\":[{\"type\":\"address\",\"name\":\"from\"},{\"type\":\"address\",\"name\":\"to\"},{\"type\":\"uint256\",\"name\":\"tokenId\"}],\"outputs\":[]},{\"type\":\"function\",\"name\":\"safeTransferFrom\",\"constant\":false,\"payable\":false,\"inputs\":[{\"type\":\"address\",\"name\":\"from\"},{\"type\":\"address\",\"name\":\"to\"},{\"type\":\"uint256\",\"name\":\"tokenId\"},{\"type\":\"bytes\",\"name\":\"data\"}],\"outputs\":[]},{\"type\":\"function\",\"name\":\"setApprovalForAll\",\"constant\":false,\"payable\":false,\"inputs\":[{\"type\":\"address\",\"name\":\"operator\"},{\"type\":\"bool\",\"name\":\"approved\"}],\"outputs\":[]},{\"type\":\"function\",\"name\":\"setAuctionDuration\",\"constant\":false,\"payable\":false,\"inputs\":[{\"type\":\"uint256\",\"name\":\"auctionDuration_\"}],\"outputs\":[]},{\"type\":\"function\",\"name\":\"setBidIncrementalMaxAmount\",\"constant\":false,\"payable\":false,\"inputs\":[{\"type\":\"uint256\",\"name\":\"bidIncrementMaxAmount_\"}],\"outputs\":[]},{\"type\":\"function\",\"name\":\"setBidIncrementalPercent\",\"constant\":false,\"payable\":false,\"inputs\":[{\"type\":\"uint256\",\"name\":\"bidIncrementalPercent_\"}],\"outputs\":[]},{\"type\":\"function\",\"name\":\"setWhitelistedBidder\",\"constant\":false,\"payable\":false,\"inputs\":[{\"type\":\"address\",\"name\":\"bidder\"},{\"type\":\"bool\",\"name\":\"whitelisted\"}],\"outputs\":[]},{\"type\":\"function\",\"name\":\"state\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[{\"type\":\"address\",\"name\":\"pool\"}],\"outputs\":[{\"type\":\"uint8\"}]},{\"type\":\"function\",\"name\":\"supportsInterface\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[{\"type\":\"bytes4\",\"name\":\"interfaceId\"}],\"outputs\":[{\"type\":\"bool\"}]},{\"type\":\"function\",\"name\":\"symbol\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[],\"outputs\":[{\"type\":\"string\"}]},{\"type\":\"function\",\"name\":\"tokenInfo\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[{\"type\":\"uint256\"}],\"outputs\":[{\"type\":\"address\",\"name\":\"pool\"},{\"type\":\"uint256\",\"name\":\"borrowsAtClaim\"},{\"type\":\"uint256\",\"name\":\"interestRate\"}]},{\"type\":\"function\",\"name\":\"tokenURI\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[{\"type\":\"uint256\",\"name\":\"tokenId\"}],\"outputs\":[{\"type\":\"string\"}]},{\"type\":\"function\",\"name\":\"transferFrom\",\"constant\":false,\"payable\":false,\"inputs\":[{\"type\":\"address\",\"name\":\"from\"},{\"type\":\"address\",\"name\":\"to\"},{\"type\":\"uint256\",\"name\":\"tokenId\"}],\"outputs\":[]},{\"type\":\"function\",\"name\":\"transferOwnership\",\"constant\":false,\"payable\":false,\"inputs\":[{\"type\":\"address\",\"name\":\"newOwner\"}],\"outputs\":[]}]",
+	"transactionHash": "0x32eccd658b7a4da5c77207dcb1b8424102566699d5141d6030030bc00bb59e1a",
+	"receipt": {
+		"to": null,
+		"from": "0xe63bC74801ea94EA5258b5Ef88935dcEbA3DF3A5",
+		"contractAddress": "0x7554fa6F01e8Dc237818AAed54204799544479aE",
+		"transactionIndex": 0,
+		"gasUsed": {
+			"type": "BigNumber",
+			"hex": "0x0c78d5"
+		},
+		"logsBloom": "0x00000000000000000000100000000000400000000000000000800000000000000000040000000000000000000000000000000000000000000000000000000000000000000000000010080000000002000003000000000008000000000000000000020000020000000000000000000800000000800000000000000000000000400000000000000000000000000000000000000000000080000040000000800000000000000000000000000000000400000000000000000000000000000000000000000020020000000000000000040000000000000400000000000000000020000000000000000000000000000000000000000000000000000000000000000000",
+		"blockHash": "0x898d0e715df7efbd1ebceb36a68ca3cc7617ba57898ffdf6290f789f0f27dd4a",
+		"transactionHash": "0x32eccd658b7a4da5c77207dcb1b8424102566699d5141d6030030bc00bb59e1a",
+		"logs": [
+			{
+				"transactionIndex": 0,
+				"blockNumber": 49691534,
+				"transactionHash": "0x32eccd658b7a4da5c77207dcb1b8424102566699d5141d6030030bc00bb59e1a",
+				"address": "0x7554fa6F01e8Dc237818AAed54204799544479aE",
+				"topics": [
+					"0xbc7cd75a20ee27fd9adebab32041f755214dbc6bffa90cc0225b39da2e5c2d3b",
+					"0x000000000000000000000000fe0c81550c84d75e06e8c61ccc18be20c5e74103"
+				],
+				"data": "0x",
+				"logIndex": 0,
+				"blockHash": "0x898d0e715df7efbd1ebceb36a68ca3cc7617ba57898ffdf6290f789f0f27dd4a"
+			},
+			{
+				"transactionIndex": 0,
+				"blockNumber": 49691534,
+				"transactionHash": "0x32eccd658b7a4da5c77207dcb1b8424102566699d5141d6030030bc00bb59e1a",
+				"address": "0x7554fa6F01e8Dc237818AAed54204799544479aE",
+				"topics": [
+					"0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0",
+					"0x0000000000000000000000000000000000000000000000000000000000000000",
+					"0x000000000000000000000000e63bc74801ea94ea5258b5ef88935dceba3df3a5"
+				],
+				"data": "0x",
+				"logIndex": 1,
+				"blockHash": "0x898d0e715df7efbd1ebceb36a68ca3cc7617ba57898ffdf6290f789f0f27dd4a"
+			},
+			{
+				"transactionIndex": 0,
+				"blockNumber": 49691534,
+				"transactionHash": "0x32eccd658b7a4da5c77207dcb1b8424102566699d5141d6030030bc00bb59e1a",
+				"address": "0x7554fa6F01e8Dc237818AAed54204799544479aE",
+				"topics": [
+					"0x7f26b83ff96e1f2b6a682f133852f6798a09c465da95921460cefb3847402498"
+				],
+				"data": "0x0000000000000000000000000000000000000000000000000000000000000001",
+				"logIndex": 2,
+				"blockHash": "0x898d0e715df7efbd1ebceb36a68ca3cc7617ba57898ffdf6290f789f0f27dd4a"
+			},
+			{
+				"transactionIndex": 0,
+				"blockNumber": 49691534,
+				"transactionHash": "0x32eccd658b7a4da5c77207dcb1b8424102566699d5141d6030030bc00bb59e1a",
+				"address": "0x7554fa6F01e8Dc237818AAed54204799544479aE",
+				"topics": [
+					"0x7e644d79422f17c01e4894b5f4f588d331ebfa28653d42ae832dc59e38c9798f"
+				],
+				"data": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000008eff316a36f1a0fcb1b217b571a43558e59bd1cc",
+				"logIndex": 3,
+				"blockHash": "0x898d0e715df7efbd1ebceb36a68ca3cc7617ba57898ffdf6290f789f0f27dd4a"
+			}
+		],
+		"blockNumber": 49691534,
+		"confirmations": 53,
+		"cumulativeGasUsed": {
+			"type": "BigNumber",
+			"hex": "0x0c78d5"
+		},
+		"status": 1,
+		"type": 0,
+		"byzantium": true,
+		"events": [
+			{
+				"transactionIndex": 0,
+				"blockNumber": 49691534,
+				"transactionHash": "0x32eccd658b7a4da5c77207dcb1b8424102566699d5141d6030030bc00bb59e1a",
+				"address": "0x7554fa6F01e8Dc237818AAed54204799544479aE",
+				"topics": [
+					"0xbc7cd75a20ee27fd9adebab32041f755214dbc6bffa90cc0225b39da2e5c2d3b",
+					"0x000000000000000000000000fe0c81550c84d75e06e8c61ccc18be20c5e74103"
+				],
+				"data": "0x",
+				"logIndex": 0,
+				"blockHash": "0x898d0e715df7efbd1ebceb36a68ca3cc7617ba57898ffdf6290f789f0f27dd4a",
+				"args": [
+					"0xfE0c81550c84D75e06e8C61CCc18Be20C5e74103"
+				],
+				"event": "Upgraded",
+				"eventSignature": "Upgraded(address)"
+			},
+			{
+				"transactionIndex": 0,
+				"blockNumber": 49691534,
+				"transactionHash": "0x32eccd658b7a4da5c77207dcb1b8424102566699d5141d6030030bc00bb59e1a",
+				"address": "0x7554fa6F01e8Dc237818AAed54204799544479aE",
+				"topics": [
+					"0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0",
+					"0x0000000000000000000000000000000000000000000000000000000000000000",
+					"0x000000000000000000000000e63bc74801ea94ea5258b5ef88935dceba3df3a5"
+				],
+				"data": "0x",
+				"logIndex": 1,
+				"blockHash": "0x898d0e715df7efbd1ebceb36a68ca3cc7617ba57898ffdf6290f789f0f27dd4a"
+			},
+			{
+				"transactionIndex": 0,
+				"blockNumber": 49691534,
+				"transactionHash": "0x32eccd658b7a4da5c77207dcb1b8424102566699d5141d6030030bc00bb59e1a",
+				"address": "0x7554fa6F01e8Dc237818AAed54204799544479aE",
+				"topics": [
+					"0x7f26b83ff96e1f2b6a682f133852f6798a09c465da95921460cefb3847402498"
+				],
+				"data": "0x0000000000000000000000000000000000000000000000000000000000000001",
+				"logIndex": 2,
+				"blockHash": "0x898d0e715df7efbd1ebceb36a68ca3cc7617ba57898ffdf6290f789f0f27dd4a"
+			},
+			{
+				"transactionIndex": 0,
+				"blockNumber": 49691534,
+				"transactionHash": "0x32eccd658b7a4da5c77207dcb1b8424102566699d5141d6030030bc00bb59e1a",
+				"address": "0x7554fa6F01e8Dc237818AAed54204799544479aE",
+				"topics": [
+					"0x7e644d79422f17c01e4894b5f4f588d331ebfa28653d42ae832dc59e38c9798f"
+				],
+				"data": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000008eff316a36f1a0fcb1b217b571a43558e59bd1cc",
+				"logIndex": 3,
+				"blockHash": "0x898d0e715df7efbd1ebceb36a68ca3cc7617ba57898ffdf6290f789f0f27dd4a",
+				"args": [
+					"0x0000000000000000000000000000000000000000",
+					"0x8efF316A36F1a0FCb1b217b571a43558e59bd1Cc"
+				],
+				"event": "AdminChanged",
+				"eventSignature": "AdminChanged(address,address)"
+			}
+		]
+	},
+	"args": [
+		"0xB217D93a8f6A4b7861bB2C865a8C22105FbCdE41",
+		432000,
+		{
+			"type": "BigNumber",
+			"hex": "0x0de0b6b3a7640000"
+		},
+		{
+			"percent": {
+				"type": "BigNumber",
+				"hex": "0x2386f26fc10000"
+			},
+			"maxAmount": {
+				"type": "BigNumber",
+				"hex": "0x033b2e3c9fd0803ce8000000"
+			}
+		}
+	]
+}

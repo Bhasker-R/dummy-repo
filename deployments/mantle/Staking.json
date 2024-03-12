@@ -1,0 +1,94 @@
+{
+	"address": "0xE5860C7CE8D6158524f00E6142A91eB6686A798A",
+	"type": "proxy",
+	"abi": "[{\"type\":\"event\",\"anonymous\":false,\"name\":\"Burned\",\"inputs\":[{\"type\":\"address\",\"name\":\"account\",\"indexed\":true},{\"type\":\"uint256\",\"name\":\"amount\",\"indexed\":false}]},{\"type\":\"event\",\"anonymous\":false,\"name\":\"Initialized\",\"inputs\":[{\"type\":\"uint8\",\"name\":\"version\",\"indexed\":false}]},{\"type\":\"event\",\"anonymous\":false,\"name\":\"ManagerMinimalStakeSet\",\"inputs\":[{\"type\":\"uint256\",\"name\":\"stake\",\"indexed\":false}]},{\"type\":\"event\",\"anonymous\":false,\"name\":\"OwnershipTransferred\",\"inputs\":[{\"type\":\"address\",\"name\":\"previousOwner\",\"indexed\":true},{\"type\":\"address\",\"name\":\"newOwner\",\"indexed\":true}]},{\"type\":\"event\",\"anonymous\":false,\"name\":\"StakeLocked\",\"inputs\":[{\"type\":\"address\",\"name\":\"account\",\"indexed\":true},{\"type\":\"uint256\",\"name\":\"amount\",\"indexed\":false}]},{\"type\":\"event\",\"anonymous\":false,\"name\":\"StakeUnlocked\",\"inputs\":[{\"type\":\"address\",\"name\":\"account\",\"indexed\":true},{\"type\":\"uint256\",\"name\":\"amount\",\"indexed\":false}]},{\"type\":\"event\",\"anonymous\":false,\"name\":\"Staked\",\"inputs\":[{\"type\":\"address\",\"name\":\"account\",\"indexed\":true},{\"type\":\"uint256\",\"name\":\"amount\",\"indexed\":false}]},{\"type\":\"event\",\"anonymous\":false,\"name\":\"Unstaked\",\"inputs\":[{\"type\":\"address\",\"name\":\"account\",\"indexed\":true},{\"type\":\"uint256\",\"name\":\"amount\",\"indexed\":false}]},{\"type\":\"function\",\"name\":\"BURN_ADDRESS\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[],\"outputs\":[{\"type\":\"address\"}]},{\"type\":\"function\",\"name\":\"burnStake\",\"constant\":false,\"payable\":false,\"inputs\":[{\"type\":\"address\",\"name\":\"account\"},{\"type\":\"uint256\",\"name\":\"amount\"}],\"outputs\":[]},{\"type\":\"function\",\"name\":\"checkpoints\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[{\"type\":\"address\"},{\"type\":\"uint32\"}],\"outputs\":[{\"type\":\"uint256\",\"name\":\"fromBlock\"},{\"type\":\"uint256\",\"name\":\"stake\"}]},{\"type\":\"function\",\"name\":\"cpool\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[],\"outputs\":[{\"type\":\"address\"}]},{\"type\":\"function\",\"name\":\"factory\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[],\"outputs\":[{\"type\":\"address\"}]},{\"type\":\"function\",\"name\":\"getAvailableStake\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[{\"type\":\"address\",\"name\":\"account\"}],\"outputs\":[{\"type\":\"uint256\"}]},{\"type\":\"function\",\"name\":\"getCurrentStake\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[{\"type\":\"address\",\"name\":\"account\"}],\"outputs\":[{\"type\":\"uint256\"}]},{\"type\":\"function\",\"name\":\"getPriorVotes\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[{\"type\":\"address\",\"name\":\"account\"},{\"type\":\"uint256\",\"name\":\"blockNumber\"}],\"outputs\":[{\"type\":\"uint256\"}]},{\"type\":\"function\",\"name\":\"initialize\",\"constant\":false,\"payable\":false,\"inputs\":[{\"type\":\"address\",\"name\":\"cpool_\"},{\"type\":\"address\",\"name\":\"factory_\"},{\"type\":\"uint256\",\"name\":\"managerMinimalStake_\"}],\"outputs\":[]},{\"type\":\"function\",\"name\":\"lockStake\",\"constant\":false,\"payable\":false,\"inputs\":[{\"type\":\"address\",\"name\":\"account\"}],\"outputs\":[{\"type\":\"uint256\"}]},{\"type\":\"function\",\"name\":\"locked\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[{\"type\":\"address\"}],\"outputs\":[{\"type\":\"uint256\"}]},{\"type\":\"function\",\"name\":\"managerMinimalStake\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[],\"outputs\":[{\"type\":\"uint256\"}]},{\"type\":\"function\",\"name\":\"numCheckpoints\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[{\"type\":\"address\"}],\"outputs\":[{\"type\":\"uint32\"}]},{\"type\":\"function\",\"name\":\"owner\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[],\"outputs\":[{\"type\":\"address\"}]},{\"type\":\"function\",\"name\":\"renounceOwnership\",\"constant\":false,\"payable\":false,\"inputs\":[],\"outputs\":[]},{\"type\":\"function\",\"name\":\"setManagerMinimalStake\",\"constant\":false,\"payable\":false,\"inputs\":[{\"type\":\"uint256\",\"name\":\"managerMinimalStake_\"}],\"outputs\":[]},{\"type\":\"function\",\"name\":\"stake\",\"constant\":false,\"payable\":false,\"inputs\":[{\"type\":\"uint256\",\"name\":\"amount\"}],\"outputs\":[]},{\"type\":\"function\",\"name\":\"transferOwnership\",\"constant\":false,\"payable\":false,\"inputs\":[{\"type\":\"address\",\"name\":\"newOwner\"}],\"outputs\":[]},{\"type\":\"function\",\"name\":\"unlockAndWithdrawStake\",\"constant\":false,\"payable\":false,\"inputs\":[{\"type\":\"address\",\"name\":\"staker\"},{\"type\":\"address\",\"name\":\"receiver\"},{\"type\":\"uint256\",\"name\":\"amount\"}],\"outputs\":[]},{\"type\":\"function\",\"name\":\"unstake\",\"constant\":false,\"payable\":false,\"inputs\":[{\"type\":\"uint256\",\"name\":\"amount\"}],\"outputs\":[]}]",
+	"transactionHash": "0x8685059c90380406bd54a9678750b30a1a0c5ed14436f51b5f6ddd7201ce24ee",
+	"receipt": {
+		"to": null,
+		"from": "0xe63bC74801ea94EA5258b5Ef88935dcEbA3DF3A5",
+		"contractAddress": "0xE5860C7CE8D6158524f00E6142A91eB6686A798A",
+		"transactionIndex": 0,
+		"gasUsed": {
+			"type": "BigNumber",
+			"hex": "0x08f679"
+		},
+		"logsBloom": "0x80000000000000000000000000000000402000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000000000000800000000000000000000000000000000000000000000000000000000000000000000000000000000000800100000000000000000000000000000800001000000000000000000000000000000000000020000000000000000000000000000008000400000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+		"blockHash": "0x6d843b5b58ff3f3ddfc6a8cb12de751048ac2c4843e05bba2e5e2da3cb703c46",
+		"transactionHash": "0x8685059c90380406bd54a9678750b30a1a0c5ed14436f51b5f6ddd7201ce24ee",
+		"logs": [
+			{
+				"transactionIndex": 0,
+				"blockNumber": 49691364,
+				"transactionHash": "0x8685059c90380406bd54a9678750b30a1a0c5ed14436f51b5f6ddd7201ce24ee",
+				"address": "0xE5860C7CE8D6158524f00E6142A91eB6686A798A",
+				"topics": [
+					"0xbc7cd75a20ee27fd9adebab32041f755214dbc6bffa90cc0225b39da2e5c2d3b",
+					"0x0000000000000000000000001f64d0d771ca7bdc06dd8faa99a4be8a07433db3"
+				],
+				"data": "0x",
+				"logIndex": 0,
+				"blockHash": "0x6d843b5b58ff3f3ddfc6a8cb12de751048ac2c4843e05bba2e5e2da3cb703c46"
+			},
+			{
+				"transactionIndex": 0,
+				"blockNumber": 49691364,
+				"transactionHash": "0x8685059c90380406bd54a9678750b30a1a0c5ed14436f51b5f6ddd7201ce24ee",
+				"address": "0xE5860C7CE8D6158524f00E6142A91eB6686A798A",
+				"topics": [
+					"0x7e644d79422f17c01e4894b5f4f588d331ebfa28653d42ae832dc59e38c9798f"
+				],
+				"data": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000008eff316a36f1a0fcb1b217b571a43558e59bd1cc",
+				"logIndex": 1,
+				"blockHash": "0x6d843b5b58ff3f3ddfc6a8cb12de751048ac2c4843e05bba2e5e2da3cb703c46"
+			}
+		],
+		"blockNumber": 49691364,
+		"confirmations": 5,
+		"cumulativeGasUsed": {
+			"type": "BigNumber",
+			"hex": "0x08f679"
+		},
+		"status": 1,
+		"type": 0,
+		"byzantium": true,
+		"events": [
+			{
+				"transactionIndex": 0,
+				"blockNumber": 49691364,
+				"transactionHash": "0x8685059c90380406bd54a9678750b30a1a0c5ed14436f51b5f6ddd7201ce24ee",
+				"address": "0xE5860C7CE8D6158524f00E6142A91eB6686A798A",
+				"topics": [
+					"0xbc7cd75a20ee27fd9adebab32041f755214dbc6bffa90cc0225b39da2e5c2d3b",
+					"0x0000000000000000000000001f64d0d771ca7bdc06dd8faa99a4be8a07433db3"
+				],
+				"data": "0x",
+				"logIndex": 0,
+				"blockHash": "0x6d843b5b58ff3f3ddfc6a8cb12de751048ac2c4843e05bba2e5e2da3cb703c46",
+				"args": [
+					"0x1F64D0d771CA7bdc06dD8FAa99a4bE8A07433Db3"
+				],
+				"event": "Upgraded",
+				"eventSignature": "Upgraded(address)"
+			},
+			{
+				"transactionIndex": 0,
+				"blockNumber": 49691364,
+				"transactionHash": "0x8685059c90380406bd54a9678750b30a1a0c5ed14436f51b5f6ddd7201ce24ee",
+				"address": "0xE5860C7CE8D6158524f00E6142A91eB6686A798A",
+				"topics": [
+					"0x7e644d79422f17c01e4894b5f4f588d331ebfa28653d42ae832dc59e38c9798f"
+				],
+				"data": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000008eff316a36f1a0fcb1b217b571a43558e59bd1cc",
+				"logIndex": 1,
+				"blockHash": "0x6d843b5b58ff3f3ddfc6a8cb12de751048ac2c4843e05bba2e5e2da3cb703c46",
+				"args": [
+					"0x0000000000000000000000000000000000000000",
+					"0x8efF316A36F1a0FCb1b217b571a43558e59bd1Cc"
+				],
+				"event": "AdminChanged",
+				"eventSignature": "AdminChanged(address,address)"
+			}
+		]
+	},
+	"args": []
+}

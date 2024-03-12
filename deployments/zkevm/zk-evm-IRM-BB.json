@@ -1,0 +1,129 @@
+{
+	"address": "0x8454F7c8f7891a2eF1aBdF1DFb83a798066629D2",
+	"type": "default",
+	"abi": "[{\"type\":\"constructor\",\"payable\":false,\"inputs\":[{\"type\":\"uint256\",\"name\":\"zeroRate_\"},{\"type\":\"uint256\",\"name\":\"fullRate_\"},{\"type\":\"uint256\",\"name\":\"kink_\"},{\"type\":\"uint256\",\"name\":\"kinkRate_\"}]},{\"type\":\"error\",\"name\":\"PRBMathSD59x18__DivInputTooSmall\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"PRBMathSD59x18__DivOverflow\",\"inputs\":[{\"type\":\"uint256\",\"name\":\"rAbs\"}]},{\"type\":\"error\",\"name\":\"PRBMathSD59x18__Exp2InputTooBig\",\"inputs\":[{\"type\":\"int256\",\"name\":\"x\"}]},{\"type\":\"error\",\"name\":\"PRBMathSD59x18__FromIntOverflow\",\"inputs\":[{\"type\":\"int256\",\"name\":\"x\"}]},{\"type\":\"error\",\"name\":\"PRBMathSD59x18__FromIntUnderflow\",\"inputs\":[{\"type\":\"int256\",\"name\":\"x\"}]},{\"type\":\"error\",\"name\":\"PRBMathSD59x18__LogInputTooSmall\",\"inputs\":[{\"type\":\"int256\",\"name\":\"x\"}]},{\"type\":\"error\",\"name\":\"PRBMathSD59x18__MulInputTooSmall\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"PRBMathSD59x18__MulOverflow\",\"inputs\":[{\"type\":\"uint256\",\"name\":\"rAbs\"}]},{\"type\":\"error\",\"name\":\"PRBMath__MulDivFixedPointOverflow\",\"inputs\":[{\"type\":\"uint256\",\"name\":\"prod1\"}]},{\"type\":\"error\",\"name\":\"PRBMath__MulDivOverflow\",\"inputs\":[{\"type\":\"uint256\",\"name\":\"prod1\"},{\"type\":\"uint256\",\"name\":\"denominator\"}]},{\"type\":\"event\",\"anonymous\":false,\"name\":\"Configured\",\"inputs\":[{\"type\":\"uint256\",\"name\":\"zeroRate\",\"indexed\":false},{\"type\":\"uint256\",\"name\":\"fullRate\",\"indexed\":false},{\"type\":\"uint256\",\"name\":\"kink\",\"indexed\":false},{\"type\":\"uint256\",\"name\":\"kinkRate\",\"indexed\":false}]},{\"type\":\"event\",\"anonymous\":false,\"name\":\"OwnershipTransferred\",\"inputs\":[{\"type\":\"address\",\"name\":\"previousOwner\",\"indexed\":true},{\"type\":\"address\",\"name\":\"newOwner\",\"indexed\":true}]},{\"type\":\"function\",\"name\":\"MAX_RATE\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[],\"outputs\":[{\"type\":\"uint256\"}]},{\"type\":\"function\",\"name\":\"SECONDS_PER_YEAR\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[],\"outputs\":[{\"type\":\"uint256\"}]},{\"type\":\"function\",\"name\":\"TYPE\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[],\"outputs\":[{\"type\":\"string\"}]},{\"type\":\"function\",\"name\":\"configure\",\"constant\":false,\"payable\":false,\"inputs\":[{\"type\":\"uint256\",\"name\":\"zeroRate_\"},{\"type\":\"uint256\",\"name\":\"fullRate_\"},{\"type\":\"uint256\",\"name\":\"kink_\"},{\"type\":\"uint256\",\"name\":\"kinkRate_\"}],\"outputs\":[]},{\"type\":\"function\",\"name\":\"fullRate\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[],\"outputs\":[{\"type\":\"uint256\"}]},{\"type\":\"function\",\"name\":\"getBorrowRate\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[{\"type\":\"uint256\",\"name\":\"balance\"},{\"type\":\"uint256\",\"name\":\"borrows\"},{\"type\":\"uint256\",\"name\":\"reserves\"}],\"outputs\":[{\"type\":\"uint256\"}]},{\"type\":\"function\",\"name\":\"getSupplyRate\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[{\"type\":\"uint256\",\"name\":\"balance\"},{\"type\":\"uint256\",\"name\":\"borrows\"},{\"type\":\"uint256\",\"name\":\"reserves\"},{\"type\":\"uint256\",\"name\":\"reserveFactor\"}],\"outputs\":[{\"type\":\"uint256\"}]},{\"type\":\"function\",\"name\":\"kink\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[],\"outputs\":[{\"type\":\"uint256\"}]},{\"type\":\"function\",\"name\":\"kinkRate\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[],\"outputs\":[{\"type\":\"uint256\"}]},{\"type\":\"function\",\"name\":\"owner\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[],\"outputs\":[{\"type\":\"address\"}]},{\"type\":\"function\",\"name\":\"renounceOwnership\",\"constant\":false,\"payable\":false,\"inputs\":[],\"outputs\":[]},{\"type\":\"function\",\"name\":\"transferOwnership\",\"constant\":false,\"payable\":false,\"inputs\":[{\"type\":\"address\",\"name\":\"newOwner\"}],\"outputs\":[]},{\"type\":\"function\",\"name\":\"utilizationRate\",\"constant\":true,\"stateMutability\":\"pure\",\"payable\":false,\"inputs\":[{\"type\":\"uint256\",\"name\":\"balance\"},{\"type\":\"uint256\",\"name\":\"borrows\"},{\"type\":\"uint256\",\"name\":\"reserves\"}],\"outputs\":[{\"type\":\"uint256\"}]},{\"type\":\"function\",\"name\":\"zeroRate\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[],\"outputs\":[{\"type\":\"uint256\"}]}]",
+	"transactionHash": "0x45018673cb98d4208199b8f8ce8ebb8b74e88ff6431d1263f20e599bad9a8749",
+	"receipt": {
+		"to": null,
+		"from": "0xe56bAC3EeF30073152934cc18c2F9dbca35069a0",
+		"contractAddress": "0x8454F7c8f7891a2eF1aBdF1DFb83a798066629D2",
+		"transactionIndex": 0,
+		"root": "0x0b3043af832d9dce7183b80a93584438d1ec7bb50f0db535d95bd3ea525aab51",
+		"gasUsed": {
+			"type": "BigNumber",
+			"hex": "0x16d0d7"
+		},
+		"logsBloom": "0x00000400000000000000000000000000000000000000000000800000000000000000400000000000000000000000000000000000000000000000000000000000000000000020000000000000000000000001000000000000000000000000000000000000020000000000000000000800000000000000000000000000000000400000000000000000000000000000000000000000008000000000002000000000000000000000000000000000000000008000008000004000000000000000000000000000000000000000000000000000000000000000000000000000000120000000000000000000000000000000000000000000000000000000000000000000",
+		"blockHash": "0x484380967b8c1b354d117a98a1b3fc71fc5e2b0511654f06690e6d3ee5accd8e",
+		"transactionHash": "0x45018673cb98d4208199b8f8ce8ebb8b74e88ff6431d1263f20e599bad9a8749",
+		"logs": [
+			{
+				"transactionIndex": 0,
+				"blockNumber": 2995312,
+				"transactionHash": "0x45018673cb98d4208199b8f8ce8ebb8b74e88ff6431d1263f20e599bad9a8749",
+				"address": "0x8454F7c8f7891a2eF1aBdF1DFb83a798066629D2",
+				"topics": [
+					"0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0",
+					"0x0000000000000000000000000000000000000000000000000000000000000000",
+					"0x000000000000000000000000e56bac3eef30073152934cc18c2f9dbca35069a0"
+				],
+				"data": "0x",
+				"logIndex": 0,
+				"blockHash": "0x484380967b8c1b354d117a98a1b3fc71fc5e2b0511654f06690e6d3ee5accd8e"
+			},
+			{
+				"transactionIndex": 0,
+				"blockNumber": 2995312,
+				"transactionHash": "0x45018673cb98d4208199b8f8ce8ebb8b74e88ff6431d1263f20e599bad9a8749",
+				"address": "0x8454F7c8f7891a2eF1aBdF1DFb83a798066629D2",
+				"topics": [
+					"0x6b3ef0cfa93f3f5ccc0d87c20ddd08a395f4cef0f6ed173aa17b0415b209af9f"
+				],
+				"data": "0x000000000000000000000000000000000000000000000000023bfca5a0d6800000000000000000000000000000000000000000000000000003f2644b0e1f00000000000000000000000000000000000000000000000000000bcbce7f1b150000000000000000000000000000000000000000000000000000019cd348cae68000",
+				"logIndex": 1,
+				"blockHash": "0x484380967b8c1b354d117a98a1b3fc71fc5e2b0511654f06690e6d3ee5accd8e"
+			}
+		],
+		"blockNumber": 2995312,
+		"confirmations": 4,
+		"cumulativeGasUsed": {
+			"type": "BigNumber",
+			"hex": "0x16d0d7"
+		},
+		"status": 1,
+		"type": 0,
+		"byzantium": true,
+		"events": [
+			{
+				"transactionIndex": 0,
+				"blockNumber": 2995312,
+				"transactionHash": "0x45018673cb98d4208199b8f8ce8ebb8b74e88ff6431d1263f20e599bad9a8749",
+				"address": "0x8454F7c8f7891a2eF1aBdF1DFb83a798066629D2",
+				"topics": [
+					"0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0",
+					"0x0000000000000000000000000000000000000000000000000000000000000000",
+					"0x000000000000000000000000e56bac3eef30073152934cc18c2f9dbca35069a0"
+				],
+				"data": "0x",
+				"logIndex": 0,
+				"blockHash": "0x484380967b8c1b354d117a98a1b3fc71fc5e2b0511654f06690e6d3ee5accd8e",
+				"args": [
+					"0x0000000000000000000000000000000000000000",
+					"0xe56bAC3EeF30073152934cc18c2F9dbca35069a0"
+				],
+				"event": "OwnershipTransferred",
+				"eventSignature": "OwnershipTransferred(address,address)"
+			},
+			{
+				"transactionIndex": 0,
+				"blockNumber": 2995312,
+				"transactionHash": "0x45018673cb98d4208199b8f8ce8ebb8b74e88ff6431d1263f20e599bad9a8749",
+				"address": "0x8454F7c8f7891a2eF1aBdF1DFb83a798066629D2",
+				"topics": [
+					"0x6b3ef0cfa93f3f5ccc0d87c20ddd08a395f4cef0f6ed173aa17b0415b209af9f"
+				],
+				"data": "0x000000000000000000000000000000000000000000000000023bfca5a0d6800000000000000000000000000000000000000000000000000003f2644b0e1f00000000000000000000000000000000000000000000000000000bcbce7f1b150000000000000000000000000000000000000000000000000000019cd348cae68000",
+				"logIndex": 1,
+				"blockHash": "0x484380967b8c1b354d117a98a1b3fc71fc5e2b0511654f06690e6d3ee5accd8e",
+				"args": [
+					{
+						"type": "BigNumber",
+						"hex": "0x023bfca5a0d68000"
+					},
+					{
+						"type": "BigNumber",
+						"hex": "0x03f2644b0e1f0000"
+					},
+					{
+						"type": "BigNumber",
+						"hex": "0x0bcbce7f1b150000"
+					},
+					{
+						"type": "BigNumber",
+						"hex": "0x019cd348cae68000"
+					}
+				],
+				"event": "Configured",
+				"eventSignature": "Configured(uint256,uint256,uint256,uint256)"
+			}
+		]
+	},
+	"args": [
+		{
+			"type": "BigNumber",
+			"hex": "0x023bfca5a0d68000"
+		},
+		{
+			"type": "BigNumber",
+			"hex": "0x03f2644b0e1f0000"
+		},
+		{
+			"type": "BigNumber",
+			"hex": "0x0bcbce7f1b150000"
+		},
+		{
+			"type": "BigNumber",
+			"hex": "0x019cd348cae68000"
+		}
+	]
+}

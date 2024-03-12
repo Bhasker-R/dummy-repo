@@ -1,0 +1,67 @@
+{
+	"address": "0x0E07CE3E7aD3C61fcB7f7e5542a8C61e18002E7D",
+	"type": "beacon",
+	"abi": "[{\"type\":\"constructor\",\"payable\":false,\"inputs\":[{\"type\":\"address\",\"name\":\"implementation_\"}]},{\"type\":\"event\",\"anonymous\":false,\"name\":\"OwnershipTransferred\",\"inputs\":[{\"type\":\"address\",\"name\":\"previousOwner\",\"indexed\":true},{\"type\":\"address\",\"name\":\"newOwner\",\"indexed\":true}]},{\"type\":\"event\",\"anonymous\":false,\"name\":\"Upgraded\",\"inputs\":[{\"type\":\"address\",\"name\":\"implementation\",\"indexed\":true}]},{\"type\":\"function\",\"name\":\"implementation\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[],\"outputs\":[{\"type\":\"address\"}]},{\"type\":\"function\",\"name\":\"owner\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[],\"outputs\":[{\"type\":\"address\"}]},{\"type\":\"function\",\"name\":\"renounceOwnership\",\"constant\":false,\"payable\":false,\"inputs\":[],\"outputs\":[]},{\"type\":\"function\",\"name\":\"transferOwnership\",\"constant\":false,\"payable\":false,\"inputs\":[{\"type\":\"address\",\"name\":\"newOwner\"}],\"outputs\":[]},{\"type\":\"function\",\"name\":\"upgradeTo\",\"constant\":false,\"payable\":false,\"inputs\":[{\"type\":\"address\",\"name\":\"newImplementation\"}],\"outputs\":[]}]",
+	"transactionHash": "0xef98807f7a58ecbcb93e1c8599c1b291edbf2177330a35df802b680b55868e63",
+	"receipt": {
+		"to": null,
+		"from": "0xe63bC74801ea94EA5258b5Ef88935dcEbA3DF3A5",
+		"contractAddress": "0x0E07CE3E7aD3C61fcB7f7e5542a8C61e18002E7D",
+		"transactionIndex": 0,
+		"gasUsed": {
+			"type": "BigNumber",
+			"hex": "0x04d111"
+		},
+		"logsBloom": "0x00000000000000000000000000000000000000000000000000800000000000000000000000008000000000000000000000000000000000002000000000000000000000000000000000080000000000000001000000000008000000000000000000020000020000000000000000000800000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100020000000000000000000000000000000000000000000000000000000000000000000",
+		"blockHash": "0xd1bee118b6a18175281db62d0fbda59d709db32478d2dad4be0a991cd6fe2bfd",
+		"transactionHash": "0xef98807f7a58ecbcb93e1c8599c1b291edbf2177330a35df802b680b55868e63",
+		"logs": [
+			{
+				"transactionIndex": 0,
+				"blockNumber": 49691420,
+				"transactionHash": "0xef98807f7a58ecbcb93e1c8599c1b291edbf2177330a35df802b680b55868e63",
+				"address": "0x0E07CE3E7aD3C61fcB7f7e5542a8C61e18002E7D",
+				"topics": [
+					"0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0",
+					"0x0000000000000000000000000000000000000000000000000000000000000000",
+					"0x000000000000000000000000e63bc74801ea94ea5258b5ef88935dceba3df3a5"
+				],
+				"data": "0x",
+				"logIndex": 0,
+				"blockHash": "0xd1bee118b6a18175281db62d0fbda59d709db32478d2dad4be0a991cd6fe2bfd"
+			}
+		],
+		"blockNumber": 49691420,
+		"confirmations": 6,
+		"cumulativeGasUsed": {
+			"type": "BigNumber",
+			"hex": "0x04d111"
+		},
+		"status": 1,
+		"type": 0,
+		"byzantium": true,
+		"events": [
+			{
+				"transactionIndex": 0,
+				"blockNumber": 49691420,
+				"transactionHash": "0xef98807f7a58ecbcb93e1c8599c1b291edbf2177330a35df802b680b55868e63",
+				"address": "0x0E07CE3E7aD3C61fcB7f7e5542a8C61e18002E7D",
+				"topics": [
+					"0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0",
+					"0x0000000000000000000000000000000000000000000000000000000000000000",
+					"0x000000000000000000000000e63bc74801ea94ea5258b5ef88935dceba3df3a5"
+				],
+				"data": "0x",
+				"logIndex": 0,
+				"blockHash": "0xd1bee118b6a18175281db62d0fbda59d709db32478d2dad4be0a991cd6fe2bfd",
+				"args": [
+					"0x0000000000000000000000000000000000000000",
+					"0xe63bC74801ea94EA5258b5Ef88935dcEbA3DF3A5"
+				],
+				"event": "OwnershipTransferred",
+				"eventSignature": "OwnershipTransferred(address,address)"
+			}
+		]
+	},
+	"args": []
+}

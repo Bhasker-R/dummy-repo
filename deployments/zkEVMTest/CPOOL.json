@@ -1,0 +1,74 @@
+{
+	"address": "0xEcfd527e404A0611bd21cd84e50fA62dD4Ba0E97",
+	"type": "default",
+	"abi": "[{\"type\":\"constructor\",\"payable\":false,\"inputs\":[{\"type\":\"address\",\"name\":\"multisig\"}]},{\"type\":\"event\",\"anonymous\":false,\"name\":\"Approval\",\"inputs\":[{\"type\":\"address\",\"name\":\"owner\",\"indexed\":true},{\"type\":\"address\",\"name\":\"spender\",\"indexed\":true},{\"type\":\"uint256\",\"name\":\"amount\",\"indexed\":false}]},{\"type\":\"event\",\"anonymous\":false,\"name\":\"DelegateChanged\",\"inputs\":[{\"type\":\"address\",\"name\":\"delegator\",\"indexed\":true},{\"type\":\"address\",\"name\":\"fromDelegate\",\"indexed\":true},{\"type\":\"address\",\"name\":\"toDelegate\",\"indexed\":true}]},{\"type\":\"event\",\"anonymous\":false,\"name\":\"DelegateVotesChanged\",\"inputs\":[{\"type\":\"address\",\"name\":\"delegate\",\"indexed\":true},{\"type\":\"uint256\",\"name\":\"previousBalance\",\"indexed\":false},{\"type\":\"uint256\",\"name\":\"newBalance\",\"indexed\":false}]},{\"type\":\"event\",\"anonymous\":false,\"name\":\"Transfer\",\"inputs\":[{\"type\":\"address\",\"name\":\"from\",\"indexed\":true},{\"type\":\"address\",\"name\":\"to\",\"indexed\":true},{\"type\":\"uint256\",\"name\":\"amount\",\"indexed\":false}]},{\"type\":\"function\",\"name\":\"DELEGATION_TYPEHASH\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[],\"outputs\":[{\"type\":\"bytes32\"}]},{\"type\":\"function\",\"name\":\"DOMAIN_TYPEHASH\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[],\"outputs\":[{\"type\":\"bytes32\"}]},{\"type\":\"function\",\"name\":\"allowance\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[{\"type\":\"address\",\"name\":\"account\"},{\"type\":\"address\",\"name\":\"spender\"}],\"outputs\":[{\"type\":\"uint256\"}]},{\"type\":\"function\",\"name\":\"approve\",\"constant\":false,\"payable\":false,\"inputs\":[{\"type\":\"address\",\"name\":\"spender\"},{\"type\":\"uint256\",\"name\":\"rawAmount\"}],\"outputs\":[{\"type\":\"bool\"}]},{\"type\":\"function\",\"name\":\"balanceOf\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[{\"type\":\"address\",\"name\":\"account\"}],\"outputs\":[{\"type\":\"uint256\"}]},{\"type\":\"function\",\"name\":\"checkpoints\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[{\"type\":\"address\"},{\"type\":\"uint32\"}],\"outputs\":[{\"type\":\"uint32\",\"name\":\"fromBlock\"},{\"type\":\"uint96\",\"name\":\"votes\"}]},{\"type\":\"function\",\"name\":\"decimals\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[],\"outputs\":[{\"type\":\"uint8\"}]},{\"type\":\"function\",\"name\":\"delegate\",\"constant\":false,\"payable\":false,\"inputs\":[{\"type\":\"address\",\"name\":\"delegatee\"}],\"outputs\":[]},{\"type\":\"function\",\"name\":\"delegateBySig\",\"constant\":false,\"payable\":false,\"inputs\":[{\"type\":\"address\",\"name\":\"delegatee\"},{\"type\":\"uint256\",\"name\":\"nonce\"},{\"type\":\"uint256\",\"name\":\"expiry\"},{\"type\":\"uint8\",\"name\":\"v\"},{\"type\":\"bytes32\",\"name\":\"r\"},{\"type\":\"bytes32\",\"name\":\"s\"}],\"outputs\":[]},{\"type\":\"function\",\"name\":\"delegates\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[{\"type\":\"address\"}],\"outputs\":[{\"type\":\"address\"}]},{\"type\":\"function\",\"name\":\"getCurrentVotes\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[{\"type\":\"address\",\"name\":\"account\"}],\"outputs\":[{\"type\":\"uint96\"}]},{\"type\":\"function\",\"name\":\"getPriorVotes\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[{\"type\":\"address\",\"name\":\"account\"},{\"type\":\"uint256\",\"name\":\"blockNumber\"}],\"outputs\":[{\"type\":\"uint96\"}]},{\"type\":\"function\",\"name\":\"name\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[],\"outputs\":[{\"type\":\"string\"}]},{\"type\":\"function\",\"name\":\"nonces\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[{\"type\":\"address\"}],\"outputs\":[{\"type\":\"uint256\"}]},{\"type\":\"function\",\"name\":\"numCheckpoints\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[{\"type\":\"address\"}],\"outputs\":[{\"type\":\"uint32\"}]},{\"type\":\"function\",\"name\":\"symbol\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[],\"outputs\":[{\"type\":\"string\"}]},{\"type\":\"function\",\"name\":\"totalSupply\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[],\"outputs\":[{\"type\":\"uint256\"}]},{\"type\":\"function\",\"name\":\"transfer\",\"constant\":false,\"payable\":false,\"inputs\":[{\"type\":\"address\",\"name\":\"dst\"},{\"type\":\"uint256\",\"name\":\"rawAmount\"}],\"outputs\":[{\"type\":\"bool\"}]},{\"type\":\"function\",\"name\":\"transferFrom\",\"constant\":false,\"payable\":false,\"inputs\":[{\"type\":\"address\",\"name\":\"src\"},{\"type\":\"address\",\"name\":\"dst\"},{\"type\":\"uint256\",\"name\":\"rawAmount\"}],\"outputs\":[{\"type\":\"bool\"}]}]",
+	"transactionHash": "0x8381d8b87534530c4adace213a65b3f3bb981e2b35503100338ece13a895f097",
+	"receipt": {
+		"to": null,
+		"from": "0xe43420E1f83530AAf8ad94e6904FDbdc3556Da2B",
+		"contractAddress": "0xEcfd527e404A0611bd21cd84e50fA62dD4Ba0E97",
+		"transactionIndex": 0,
+		"root": "0x99c4278b2dd313d44244f042e34c774cd7cafdf1712830f19e37772d7b9e8ed1",
+		"gasUsed": {
+			"type": "BigNumber",
+			"hex": "0x15a1fc"
+		},
+		"logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008000000000000000000000000000000000000000000000000020000000000000000000800000000020000000000000010000000000000000000000000000000000000000000000800000000000000000000000000000000000000000000000000000000000000000000000000000000000400000000000002000000000000000000000000000002000000000080000000000020000000000000000000000000000000000000000000000000000000000000800000",
+		"blockHash": "0xf60daa39b82a2baccc743b75a40d472b3208a0483a11ea56a654d71270cbc86e",
+		"transactionHash": "0x8381d8b87534530c4adace213a65b3f3bb981e2b35503100338ece13a895f097",
+		"logs": [
+			{
+				"transactionIndex": 0,
+				"blockNumber": 723427,
+				"transactionHash": "0x8381d8b87534530c4adace213a65b3f3bb981e2b35503100338ece13a895f097",
+				"address": "0xEcfd527e404A0611bd21cd84e50fA62dD4Ba0E97",
+				"topics": [
+					"0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+					"0x0000000000000000000000000000000000000000000000000000000000000000",
+					"0x000000000000000000000000e43420e1f83530aaf8ad94e6904fdbdc3556da2b"
+				],
+				"data": "0x0000000000000000000000000000000000000000033b2e3c9fd0803ce8000000",
+				"logIndex": 0,
+				"blockHash": "0xf60daa39b82a2baccc743b75a40d472b3208a0483a11ea56a654d71270cbc86e"
+			}
+		],
+		"blockNumber": 723427,
+		"confirmations": 1,
+		"cumulativeGasUsed": {
+			"type": "BigNumber",
+			"hex": "0x15a1fc"
+		},
+		"status": 1,
+		"type": 0,
+		"byzantium": true,
+		"events": [
+			{
+				"transactionIndex": 0,
+				"blockNumber": 723427,
+				"transactionHash": "0x8381d8b87534530c4adace213a65b3f3bb981e2b35503100338ece13a895f097",
+				"address": "0xEcfd527e404A0611bd21cd84e50fA62dD4Ba0E97",
+				"topics": [
+					"0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+					"0x0000000000000000000000000000000000000000000000000000000000000000",
+					"0x000000000000000000000000e43420e1f83530aaf8ad94e6904fdbdc3556da2b"
+				],
+				"data": "0x0000000000000000000000000000000000000000033b2e3c9fd0803ce8000000",
+				"logIndex": 0,
+				"blockHash": "0xf60daa39b82a2baccc743b75a40d472b3208a0483a11ea56a654d71270cbc86e",
+				"args": [
+					"0x0000000000000000000000000000000000000000",
+					"0xe43420E1f83530AAf8ad94e6904FDbdc3556Da2B",
+					{
+						"type": "BigNumber",
+						"hex": "0x033b2e3c9fd0803ce8000000"
+					}
+				],
+				"event": "Transfer",
+				"eventSignature": "Transfer(address,address,uint256)"
+			}
+		]
+	},
+	"args": [
+		"0xe43420E1f83530AAf8ad94e6904FDbdc3556Da2B"
+	]
+}

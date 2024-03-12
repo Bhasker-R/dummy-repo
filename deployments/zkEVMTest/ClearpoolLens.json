@@ -1,0 +1,34 @@
+{
+	"address": "0xd5a13980f628dF5f97cb9Bb4bf386AeE2CBeeD9f",
+	"type": "default",
+	"abi": "[{\"type\":\"constructor\",\"payable\":false,\"inputs\":[{\"type\":\"address\",\"name\":\"factory_\"}]},{\"type\":\"function\",\"name\":\"SECONDS_PER_YEAR\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[],\"outputs\":[{\"type\":\"uint256\"}]},{\"type\":\"function\",\"name\":\"factory\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[],\"outputs\":[{\"type\":\"address\"}]},{\"type\":\"function\",\"name\":\"getAprIndexByMarket\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[{\"type\":\"address[]\",\"name\":\"markets\"},{\"type\":\"uint256\",\"name\":\"cpoolPrice\"}],\"outputs\":[{\"type\":\"tuple[]\",\"name\":\"currencyAprs\",\"components\":[{\"type\":\"address\",\"name\":\"tokenAddress\"},{\"type\":\"uint256\",\"name\":\"value\"}]},{\"type\":\"tuple[]\",\"name\":\"cpoolAprs\",\"components\":[{\"type\":\"address\",\"name\":\"tokenAddress\"},{\"type\":\"uint256\",\"name\":\"value\"}]}]},{\"type\":\"function\",\"name\":\"getBorrowRatesIndexesByMarkets\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[{\"type\":\"address[]\",\"name\":\"markets\"}],\"outputs\":[{\"type\":\"tuple[]\",\"name\":\"rates\",\"components\":[{\"type\":\"address\",\"name\":\"tokenAddress\"},{\"type\":\"uint256\",\"name\":\"value\"}]}]},{\"type\":\"function\",\"name\":\"getPoolCpoolApr\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[{\"type\":\"address\",\"name\":\"poolAddress\"},{\"type\":\"uint256\",\"name\":\"cpoolPrice\"}],\"outputs\":[{\"type\":\"uint256\",\"name\":\"apr\"}]},{\"type\":\"function\",\"name\":\"getSupplyRatesIndexesByMarkets\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[{\"type\":\"address[]\",\"name\":\"markets\"}],\"outputs\":[{\"type\":\"tuple[]\",\"name\":\"rates\",\"components\":[{\"type\":\"address\",\"name\":\"tokenAddress\"},{\"type\":\"uint256\",\"name\":\"value\"}]}]},{\"type\":\"function\",\"name\":\"getTotalBorrowsByMarkets\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[{\"type\":\"address[]\",\"name\":\"markets\"}],\"outputs\":[{\"type\":\"tuple[]\",\"name\":\"borrows\",\"components\":[{\"type\":\"address\",\"name\":\"tokenAddress\"},{\"type\":\"uint256\",\"name\":\"value\"}]}]},{\"type\":\"function\",\"name\":\"getTotalInterestsByMarkets\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[{\"type\":\"address[]\",\"name\":\"markets\"}],\"outputs\":[{\"type\":\"tuple[]\",\"name\":\"interests\",\"components\":[{\"type\":\"address\",\"name\":\"tokenAddress\"},{\"type\":\"uint256\",\"name\":\"value\"}]}]},{\"type\":\"function\",\"name\":\"getTotalLiquidityByMarkets\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[{\"type\":\"address[]\",\"name\":\"markets\"}],\"outputs\":[{\"type\":\"tuple[]\",\"name\":\"liquidity\",\"components\":[{\"type\":\"address\",\"name\":\"tokenAddress\"},{\"type\":\"uint256\",\"name\":\"value\"}]}]},{\"type\":\"function\",\"name\":\"getTotalPrincipalsByMarkets\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[{\"type\":\"address[]\",\"name\":\"markets\"}],\"outputs\":[{\"type\":\"tuple[]\",\"name\":\"principals\",\"components\":[{\"type\":\"address\",\"name\":\"tokenAddress\"},{\"type\":\"uint256\",\"name\":\"value\"}]}]},{\"type\":\"function\",\"name\":\"getTotalReservesByMarkets\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[{\"type\":\"address[]\",\"name\":\"markets\"}],\"outputs\":[{\"type\":\"tuple[]\",\"name\":\"reserves\",\"components\":[{\"type\":\"address\",\"name\":\"tokenAddress\"},{\"type\":\"uint256\",\"name\":\"value\"}]}]}]",
+	"transactionHash": "0xa09cbd2234c3297a8253ad856215afe30bbeb0bbb2cc3f5814366794873d6205",
+	"receipt": {
+		"to": null,
+		"from": "0xe43420E1f83530AAf8ad94e6904FDbdc3556Da2B",
+		"contractAddress": "0xd5a13980f628dF5f97cb9Bb4bf386AeE2CBeeD9f",
+		"transactionIndex": 0,
+		"root": "0x0fcda89c39aa159f79418e4b92298f95e8c6b3485d6fd0bef2a744915f1bfdb4",
+		"gasUsed": {
+			"type": "BigNumber",
+			"hex": "0x1d08a3"
+		},
+		"logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+		"blockHash": "0x6aa2ba5bd353edb18a793bd627b3dde217e4c94ac5344a2299676edbd2788be4",
+		"transactionHash": "0xa09cbd2234c3297a8253ad856215afe30bbeb0bbb2cc3f5814366794873d6205",
+		"logs": [],
+		"blockNumber": 723510,
+		"confirmations": 1,
+		"cumulativeGasUsed": {
+			"type": "BigNumber",
+			"hex": "0x1d08a3"
+		},
+		"status": 1,
+		"type": 0,
+		"byzantium": true,
+		"events": []
+	},
+	"args": [
+		"0x11e90236dbe23d3bBCaD187de4AE40DA6BDD7Ab9"
+	]
+}

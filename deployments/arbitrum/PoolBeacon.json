@@ -1,0 +1,71 @@
+{
+	"address": "0xF1F6626BC305331261B755225ecDfc993500fE31",
+	"type": "beacon",
+	"abi": "[{\"type\":\"constructor\",\"payable\":false,\"inputs\":[{\"type\":\"address\",\"name\":\"implementation_\"}]},{\"type\":\"event\",\"anonymous\":false,\"name\":\"OwnershipTransferred\",\"inputs\":[{\"type\":\"address\",\"name\":\"previousOwner\",\"indexed\":true},{\"type\":\"address\",\"name\":\"newOwner\",\"indexed\":true}]},{\"type\":\"event\",\"anonymous\":false,\"name\":\"Upgraded\",\"inputs\":[{\"type\":\"address\",\"name\":\"implementation\",\"indexed\":true}]},{\"type\":\"function\",\"name\":\"implementation\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[],\"outputs\":[{\"type\":\"address\"}]},{\"type\":\"function\",\"name\":\"owner\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[],\"outputs\":[{\"type\":\"address\"}]},{\"type\":\"function\",\"name\":\"renounceOwnership\",\"constant\":false,\"payable\":false,\"inputs\":[],\"outputs\":[]},{\"type\":\"function\",\"name\":\"transferOwnership\",\"constant\":false,\"payable\":false,\"inputs\":[{\"type\":\"address\",\"name\":\"newOwner\"}],\"outputs\":[]},{\"type\":\"function\",\"name\":\"upgradeTo\",\"constant\":false,\"payable\":false,\"inputs\":[{\"type\":\"address\",\"name\":\"newImplementation\"}],\"outputs\":[]}]",
+	"transactionHash": "0x17bbe86ce176622cb05b42bc3d5b1ad990bbe79c7b1e1b9460d167f3caf0616d",
+	"receipt": {
+		"to": null,
+		"from": "0xe56bAC3EeF30073152934cc18c2F9dbca35069a0",
+		"contractAddress": "0xF1F6626BC305331261B755225ecDfc993500fE31",
+		"transactionIndex": 2,
+		"gasUsed": {
+			"type": "BigNumber",
+			"hex": "0x23f48c"
+		},
+		"logsBloom": "0x00000400000000000000000000000000000000000000000000800000000000000000400000000000000000000000000000000000000000000000000000000000000000000020000000000000000000000001000000000000000000000000000000000000020000000000000000000800000000000000000000000000000000400000000000004000000000000000000000000000000000000000000000000000000000000000001000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000000",
+		"blockHash": "0x08241ac0976ac001d6122c431a0f23e04a22b5232a465e0874052b83b1ba1cfb",
+		"transactionHash": "0x17bbe86ce176622cb05b42bc3d5b1ad990bbe79c7b1e1b9460d167f3caf0616d",
+		"logs": [
+			{
+				"transactionIndex": 2,
+				"blockNumber": 113112131,
+				"transactionHash": "0x17bbe86ce176622cb05b42bc3d5b1ad990bbe79c7b1e1b9460d167f3caf0616d",
+				"address": "0xF1F6626BC305331261B755225ecDfc993500fE31",
+				"topics": [
+					"0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0",
+					"0x0000000000000000000000000000000000000000000000000000000000000000",
+					"0x000000000000000000000000e56bac3eef30073152934cc18c2f9dbca35069a0"
+				],
+				"data": "0x",
+				"logIndex": 1,
+				"blockHash": "0x08241ac0976ac001d6122c431a0f23e04a22b5232a465e0874052b83b1ba1cfb"
+			}
+		],
+		"blockNumber": 113112131,
+		"confirmations": 1,
+		"cumulativeGasUsed": {
+			"type": "BigNumber",
+			"hex": "0x2a8e66"
+		},
+		"effectiveGasPrice": {
+			"type": "BigNumber",
+			"hex": "0x05f5e100"
+		},
+		"status": 1,
+		"type": 2,
+		"byzantium": true,
+		"events": [
+			{
+				"transactionIndex": 2,
+				"blockNumber": 113112131,
+				"transactionHash": "0x17bbe86ce176622cb05b42bc3d5b1ad990bbe79c7b1e1b9460d167f3caf0616d",
+				"address": "0xF1F6626BC305331261B755225ecDfc993500fE31",
+				"topics": [
+					"0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0",
+					"0x0000000000000000000000000000000000000000000000000000000000000000",
+					"0x000000000000000000000000e56bac3eef30073152934cc18c2f9dbca35069a0"
+				],
+				"data": "0x",
+				"logIndex": 1,
+				"blockHash": "0x08241ac0976ac001d6122c431a0f23e04a22b5232a465e0874052b83b1ba1cfb",
+				"args": [
+					"0x0000000000000000000000000000000000000000",
+					"0xe56bAC3EeF30073152934cc18c2F9dbca35069a0"
+				],
+				"event": "OwnershipTransferred",
+				"eventSignature": "OwnershipTransferred(address,address)"
+			}
+		]
+	},
+	"args": []
+}

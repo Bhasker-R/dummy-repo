@@ -1,0 +1,98 @@
+{
+	"address": "0xD024BddD497C74263a0737C459446CD38f3f7333",
+	"type": "proxy",
+	"abi": "[{\"type\":\"event\",\"anonymous\":false,\"name\":\"CurrencySet\",\"inputs\":[{\"type\":\"address\",\"name\":\"currency\",\"indexed\":false},{\"type\":\"bool\",\"name\":\"allowed\",\"indexed\":false}]},{\"type\":\"event\",\"anonymous\":false,\"name\":\"Initialized\",\"inputs\":[{\"type\":\"uint8\",\"name\":\"version\",\"indexed\":false}]},{\"type\":\"event\",\"anonymous\":false,\"name\":\"InsuranceFactorSet\",\"inputs\":[{\"type\":\"uint256\",\"name\":\"factor\",\"indexed\":false}]},{\"type\":\"event\",\"anonymous\":false,\"name\":\"InterestRateModelSet\",\"inputs\":[{\"type\":\"address\",\"name\":\"newModel\",\"indexed\":false}]},{\"type\":\"event\",\"anonymous\":false,\"name\":\"ManagerInfoSet\",\"inputs\":[{\"type\":\"address\",\"name\":\"manager\",\"indexed\":false},{\"type\":\"bytes32\",\"name\":\"ipfsHash\",\"indexed\":false}]},{\"type\":\"event\",\"anonymous\":false,\"name\":\"MaxInactivePeriodSet\",\"inputs\":[{\"type\":\"uint256\",\"name\":\"period\",\"indexed\":false}]},{\"type\":\"event\",\"anonymous\":false,\"name\":\"OwnershipTransferred\",\"inputs\":[{\"type\":\"address\",\"name\":\"previousOwner\",\"indexed\":true},{\"type\":\"address\",\"name\":\"newOwner\",\"indexed\":true}]},{\"type\":\"event\",\"anonymous\":false,\"name\":\"PeriodToStartAuctionSet\",\"inputs\":[{\"type\":\"uint256\",\"name\":\"period\",\"indexed\":false}]},{\"type\":\"event\",\"anonymous\":false,\"name\":\"PoolBeaconSet\",\"inputs\":[{\"type\":\"address\",\"name\":\"newPoolBeacon\",\"indexed\":false}]},{\"type\":\"event\",\"anonymous\":false,\"name\":\"PoolClosed\",\"inputs\":[{\"type\":\"address\",\"name\":\"pool\",\"indexed\":true},{\"type\":\"address\",\"name\":\"manager\",\"indexed\":true}]},{\"type\":\"event\",\"anonymous\":false,\"name\":\"PoolCreated\",\"inputs\":[{\"type\":\"address\",\"name\":\"pool\",\"indexed\":true},{\"type\":\"address\",\"name\":\"manager\",\"indexed\":true},{\"type\":\"address\",\"name\":\"currency\",\"indexed\":true}]},{\"type\":\"event\",\"anonymous\":false,\"name\":\"PoolRewardPerSecondSet\",\"inputs\":[{\"type\":\"address\",\"name\":\"pool\",\"indexed\":true},{\"type\":\"uint256\",\"name\":\"rewardPerSecond\",\"indexed\":false}]},{\"type\":\"event\",\"anonymous\":false,\"name\":\"PoolTransferred\",\"inputs\":[{\"type\":\"address\",\"name\":\"pool\",\"indexed\":true},{\"type\":\"address\",\"name\":\"oldManager\",\"indexed\":true},{\"type\":\"address\",\"name\":\"newManager\",\"indexed\":true}]},{\"type\":\"event\",\"anonymous\":false,\"name\":\"ProvisionalDefaultUtilizationSet\",\"inputs\":[{\"type\":\"uint256\",\"name\":\"utilization\",\"indexed\":false}]},{\"type\":\"event\",\"anonymous\":false,\"name\":\"ReserveFactorSet\",\"inputs\":[{\"type\":\"uint256\",\"name\":\"factor\",\"indexed\":false}]},{\"type\":\"event\",\"anonymous\":false,\"name\":\"TreasurySet\",\"inputs\":[{\"type\":\"address\",\"name\":\"newTreasury\",\"indexed\":false}]},{\"type\":\"event\",\"anonymous\":false,\"name\":\"WarningGracePeriodSet\",\"inputs\":[{\"type\":\"uint256\",\"name\":\"period\",\"indexed\":false}]},{\"type\":\"event\",\"anonymous\":false,\"name\":\"WarningUtilizationSet\",\"inputs\":[{\"type\":\"uint256\",\"name\":\"utilization\",\"indexed\":false}]},{\"type\":\"function\",\"name\":\"auction\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[],\"outputs\":[{\"type\":\"address\"}]},{\"type\":\"function\",\"name\":\"burnStake\",\"constant\":false,\"payable\":false,\"inputs\":[],\"outputs\":[]},{\"type\":\"function\",\"name\":\"closePool\",\"constant\":false,\"payable\":false,\"inputs\":[],\"outputs\":[]},{\"type\":\"function\",\"name\":\"cpool\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[],\"outputs\":[{\"type\":\"address\"}]},{\"type\":\"function\",\"name\":\"createPool\",\"constant\":false,\"payable\":false,\"inputs\":[{\"type\":\"address\",\"name\":\"manager\"},{\"type\":\"address\",\"name\":\"currency\"}],\"outputs\":[]},{\"type\":\"function\",\"name\":\"createPoolInitial\",\"constant\":false,\"payable\":false,\"inputs\":[{\"type\":\"address\",\"name\":\"manager\"},{\"type\":\"address\",\"name\":\"currency\"},{\"type\":\"bytes32\",\"name\":\"ipfsHash\"},{\"type\":\"string\",\"name\":\"managerSymbol\"}],\"outputs\":[]},{\"type\":\"function\",\"name\":\"currencyAllowed\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[{\"type\":\"address\"}],\"outputs\":[{\"type\":\"bool\"}]},{\"type\":\"function\",\"name\":\"flashGovernor\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[],\"outputs\":[{\"type\":\"address\"}]},{\"type\":\"function\",\"name\":\"getPoolSymbol\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[{\"type\":\"address\",\"name\":\"currency\"},{\"type\":\"address\",\"name\":\"manager\"}],\"outputs\":[{\"type\":\"string\"}]},{\"type\":\"function\",\"name\":\"getPools\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[],\"outputs\":[{\"type\":\"address[]\"}]},{\"type\":\"function\",\"name\":\"getPoolsByMarket\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[{\"type\":\"address\",\"name\":\"market\"}],\"outputs\":[{\"type\":\"address[]\"}]},{\"type\":\"function\",\"name\":\"initialize\",\"constant\":false,\"payable\":false,\"inputs\":[{\"type\":\"address\",\"name\":\"cpool_\"},{\"type\":\"address\",\"name\":\"staking_\"},{\"type\":\"address\",\"name\":\"poolBeacon_\"},{\"type\":\"address\",\"name\":\"interestRateModel_\"},{\"type\":\"address\",\"name\":\"auction_\"}],\"outputs\":[]},{\"type\":\"function\",\"name\":\"initializeExistingPoolsByMarket\",\"constant\":false,\"payable\":false,\"inputs\":[{\"type\":\"address[]\",\"name\":\"pools_\"}],\"outputs\":[]},{\"type\":\"function\",\"name\":\"insuranceFactor\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[],\"outputs\":[{\"type\":\"uint256\"}]},{\"type\":\"function\",\"name\":\"interestRateModel\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[],\"outputs\":[{\"type\":\"address\"}]},{\"type\":\"function\",\"name\":\"isPool\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[{\"type\":\"address\"}],\"outputs\":[{\"type\":\"bool\"}]},{\"type\":\"function\",\"name\":\"managerInfo\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[{\"type\":\"address\"}],\"outputs\":[{\"type\":\"address\",\"name\":\"currency\"},{\"type\":\"address\",\"name\":\"pool\"},{\"type\":\"address\",\"name\":\"staker\"},{\"type\":\"uint32\",\"name\":\"proposalId\"},{\"type\":\"uint256\",\"name\":\"stakedAmount\"},{\"type\":\"bytes32\",\"name\":\"ipfsHash\"},{\"type\":\"string\",\"name\":\"managerSymbol\"}]},{\"type\":\"function\",\"name\":\"marketPools\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[{\"type\":\"address\"},{\"type\":\"uint256\"}],\"outputs\":[{\"type\":\"address\"}]},{\"type\":\"function\",\"name\":\"maxInactivePeriod\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[],\"outputs\":[{\"type\":\"uint256\"}]},{\"type\":\"function\",\"name\":\"owner\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[],\"outputs\":[{\"type\":\"address\"}]},{\"type\":\"function\",\"name\":\"periodToStartAuction\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[],\"outputs\":[{\"type\":\"uint256\"}]},{\"type\":\"function\",\"name\":\"poolBeacon\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[],\"outputs\":[{\"type\":\"address\"}]},{\"type\":\"function\",\"name\":\"pools\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[{\"type\":\"uint256\"}],\"outputs\":[{\"type\":\"address\"}]},{\"type\":\"function\",\"name\":\"provisionalDefaultUtilization\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[],\"outputs\":[{\"type\":\"uint256\"}]},{\"type\":\"function\",\"name\":\"renounceOwnership\",\"constant\":false,\"payable\":false,\"inputs\":[],\"outputs\":[]},{\"type\":\"function\",\"name\":\"reserveFactor\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[],\"outputs\":[{\"type\":\"uint256\"}]},{\"type\":\"function\",\"name\":\"setCurrency\",\"constant\":false,\"payable\":false,\"inputs\":[{\"type\":\"address\",\"name\":\"currency\"},{\"type\":\"bool\",\"name\":\"allowed\"}],\"outputs\":[]},{\"type\":\"function\",\"name\":\"setInsuranceFactor\",\"constant\":false,\"payable\":false,\"inputs\":[{\"type\":\"uint256\",\"name\":\"insuranceFactor_\"}],\"outputs\":[]},{\"type\":\"function\",\"name\":\"setInterestRateModel\",\"constant\":false,\"payable\":false,\"inputs\":[{\"type\":\"address\",\"name\":\"interestRateModel_\"}],\"outputs\":[]},{\"type\":\"function\",\"name\":\"setManagerInfo\",\"constant\":false,\"payable\":false,\"inputs\":[{\"type\":\"address\",\"name\":\"manager\"},{\"type\":\"bytes32\",\"name\":\"ipfsHash\"}],\"outputs\":[]},{\"type\":\"function\",\"name\":\"setMaxInactivePeriod\",\"constant\":false,\"payable\":false,\"inputs\":[{\"type\":\"uint256\",\"name\":\"maxInactivePeriod_\"}],\"outputs\":[]},{\"type\":\"function\",\"name\":\"setPeriodToStartAuction\",\"constant\":false,\"payable\":false,\"inputs\":[{\"type\":\"uint256\",\"name\":\"periodToStartAuction_\"}],\"outputs\":[]},{\"type\":\"function\",\"name\":\"setPoolBeacon\",\"constant\":false,\"payable\":false,\"inputs\":[{\"type\":\"address\",\"name\":\"poolBeacon_\"}],\"outputs\":[]},{\"type\":\"function\",\"name\":\"setPoolRewardPerSecond\",\"constant\":false,\"payable\":false,\"inputs\":[{\"type\":\"address\",\"name\":\"pool\"},{\"type\":\"uint256\",\"name\":\"rewardPerSecond\"}],\"outputs\":[]},{\"type\":\"function\",\"name\":\"setProvisionalDefaultUtilization\",\"constant\":false,\"payable\":false,\"inputs\":[{\"type\":\"uint256\",\"name\":\"provisionalDefaultUtilization_\"}],\"outputs\":[]},{\"type\":\"function\",\"name\":\"setReserveFactor\",\"constant\":false,\"payable\":false,\"inputs\":[{\"type\":\"uint256\",\"name\":\"reserveFactor_\"}],\"outputs\":[]},{\"type\":\"function\",\"name\":\"setTreasury\",\"constant\":false,\"payable\":false,\"inputs\":[{\"type\":\"address\",\"name\":\"treasury_\"}],\"outputs\":[]},{\"type\":\"function\",\"name\":\"setWarningGracePeriod\",\"constant\":false,\"payable\":false,\"inputs\":[{\"type\":\"uint256\",\"name\":\"warningGracePeriod_\"}],\"outputs\":[]},{\"type\":\"function\",\"name\":\"setWarningUtilization\",\"constant\":false,\"payable\":false,\"inputs\":[{\"type\":\"uint256\",\"name\":\"warningUtilization_\"}],\"outputs\":[]},{\"type\":\"function\",\"name\":\"staking\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[],\"outputs\":[{\"type\":\"address\"}]},{\"type\":\"function\",\"name\":\"sweep\",\"constant\":false,\"payable\":false,\"inputs\":[{\"type\":\"address\",\"name\":\"token\"},{\"type\":\"address\",\"name\":\"to\"},{\"type\":\"uint256\",\"name\":\"amount\"}],\"outputs\":[]},{\"type\":\"function\",\"name\":\"transferOwnership\",\"constant\":false,\"payable\":false,\"inputs\":[{\"type\":\"address\",\"name\":\"newOwner\"}],\"outputs\":[]},{\"type\":\"function\",\"name\":\"transferPool\",\"constant\":false,\"payable\":false,\"inputs\":[{\"type\":\"address\",\"name\":\"oldManager\"},{\"type\":\"address\",\"name\":\"newManager\"}],\"outputs\":[]},{\"type\":\"function\",\"name\":\"treasury\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[],\"outputs\":[{\"type\":\"address\"}]},{\"type\":\"function\",\"name\":\"usedManagerSymbols\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[{\"type\":\"string\"}],\"outputs\":[{\"type\":\"bool\"}]},{\"type\":\"function\",\"name\":\"warningGracePeriod\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[],\"outputs\":[{\"type\":\"uint256\"}]},{\"type\":\"function\",\"name\":\"warningUtilization\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[],\"outputs\":[{\"type\":\"uint256\"}]},{\"type\":\"function\",\"name\":\"withdrawReward\",\"constant\":false,\"payable\":false,\"inputs\":[{\"type\":\"address[]\",\"name\":\"poolsList\"}],\"outputs\":[]}]",
+	"transactionHash": "0xe9601f5af4b0ca2135a037656ff98f8b3e72c83b46a03d8b4af859fd7b6eb8fd",
+	"receipt": {
+		"to": null,
+		"from": "0xe43420E1f83530AAf8ad94e6904FDbdc3556Da2B",
+		"contractAddress": "0xD024BddD497C74263a0737C459446CD38f3f7333",
+		"transactionIndex": 81,
+		"gasUsed": {
+			"type": "BigNumber",
+			"hex": "0x08f679"
+		},
+		"logsBloom": "0x00000000000000000000000000000000400000000000000000000000000000000000000000000000080000000000000000000000000000000000000000000000000000000000000000000000000002000000400000000000000000000000000000000000000000000000000000000000000000800000000000000000000000000000000000000000000000000000200400000000080000000000000000800000000000000000000000000000000000000000000040000000000000000000000000000020000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+		"blockHash": "0x7ee142a38b10cc2f95bbd4b6b10f89bb54f8d92fb7e33db671a273097507021a",
+		"transactionHash": "0xe9601f5af4b0ca2135a037656ff98f8b3e72c83b46a03d8b4af859fd7b6eb8fd",
+		"logs": [
+			{
+				"transactionIndex": 81,
+				"blockNumber": 8589695,
+				"transactionHash": "0xe9601f5af4b0ca2135a037656ff98f8b3e72c83b46a03d8b4af859fd7b6eb8fd",
+				"address": "0xD024BddD497C74263a0737C459446CD38f3f7333",
+				"topics": [
+					"0xbc7cd75a20ee27fd9adebab32041f755214dbc6bffa90cc0225b39da2e5c2d3b",
+					"0x0000000000000000000000007f4886a4ea2145b970bb7927eb12c41728ebce16"
+				],
+				"data": "0x",
+				"logIndex": 168,
+				"blockHash": "0x7ee142a38b10cc2f95bbd4b6b10f89bb54f8d92fb7e33db671a273097507021a"
+			},
+			{
+				"transactionIndex": 81,
+				"blockNumber": 8589695,
+				"transactionHash": "0xe9601f5af4b0ca2135a037656ff98f8b3e72c83b46a03d8b4af859fd7b6eb8fd",
+				"address": "0xD024BddD497C74263a0737C459446CD38f3f7333",
+				"topics": [
+					"0x7e644d79422f17c01e4894b5f4f588d331ebfa28653d42ae832dc59e38c9798f"
+				],
+				"data": "0x0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000cce408a881badf4b35e9e4dd49f3c6cea0905d31",
+				"logIndex": 169,
+				"blockHash": "0x7ee142a38b10cc2f95bbd4b6b10f89bb54f8d92fb7e33db671a273097507021a"
+			}
+		],
+		"blockNumber": 8589695,
+		"confirmations": 1,
+		"cumulativeGasUsed": {
+			"type": "BigNumber",
+			"hex": "0xa3ad23"
+		},
+		"effectiveGasPrice": {
+			"type": "BigNumber",
+			"hex": "0x1252cf841a"
+		},
+		"status": 1,
+		"type": 0,
+		"byzantium": true,
+		"events": [
+			{
+				"transactionIndex": 81,
+				"blockNumber": 8589695,
+				"transactionHash": "0xe9601f5af4b0ca2135a037656ff98f8b3e72c83b46a03d8b4af859fd7b6eb8fd",
+				"address": "0xD024BddD497C74263a0737C459446CD38f3f7333",
+				"topics": [
+					"0xbc7cd75a20ee27fd9adebab32041f755214dbc6bffa90cc0225b39da2e5c2d3b",
+					"0x0000000000000000000000007f4886a4ea2145b970bb7927eb12c41728ebce16"
+				],
+				"data": "0x",
+				"logIndex": 168,
+				"blockHash": "0x7ee142a38b10cc2f95bbd4b6b10f89bb54f8d92fb7e33db671a273097507021a",
+				"args": [
+					"0x7f4886A4eA2145B970BB7927EB12C41728ebce16"
+				],
+				"event": "Upgraded",
+				"eventSignature": "Upgraded(address)"
+			},
+			{
+				"transactionIndex": 81,
+				"blockNumber": 8589695,
+				"transactionHash": "0xe9601f5af4b0ca2135a037656ff98f8b3e72c83b46a03d8b4af859fd7b6eb8fd",
+				"address": "0xD024BddD497C74263a0737C459446CD38f3f7333",
+				"topics": [
+					"0x7e644d79422f17c01e4894b5f4f588d331ebfa28653d42ae832dc59e38c9798f"
+				],
+				"data": "0x0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000cce408a881badf4b35e9e4dd49f3c6cea0905d31",
+				"logIndex": 169,
+				"blockHash": "0x7ee142a38b10cc2f95bbd4b6b10f89bb54f8d92fb7e33db671a273097507021a",
+				"args": [
+					"0x0000000000000000000000000000000000000000",
+					"0xCCe408A881bADF4B35e9E4dd49f3c6Cea0905d31"
+				],
+				"event": "AdminChanged",
+				"eventSignature": "AdminChanged(address,address)"
+			}
+		]
+	},
+	"args": []
+}

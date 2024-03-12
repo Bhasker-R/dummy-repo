@@ -1,0 +1,69 @@
+{
+	"address": "0x4a780a989266Db37824B96610B90Ca5dCb950cC1",
+	"type": "default",
+	"abi": "[{\"type\":\"constructor\",\"payable\":false,\"inputs\":[{\"type\":\"address\",\"name\":\"factory_\"}]},{\"type\":\"function\",\"name\":\"SECONDS_PER_YEAR\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[],\"outputs\":[{\"type\":\"uint256\"}]},{\"type\":\"function\",\"name\":\"factory\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[],\"outputs\":[{\"type\":\"address\"}]},{\"type\":\"function\",\"name\":\"getAprIndexByMarket\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[{\"type\":\"address[]\",\"name\":\"markets\"},{\"type\":\"uint256\",\"name\":\"cpoolPrice\"}],\"outputs\":[{\"type\":\"tuple[]\",\"name\":\"currencyAprs\",\"components\":[{\"type\":\"address\",\"name\":\"tokenAddress\"},{\"type\":\"uint256\",\"name\":\"value\"}]},{\"type\":\"tuple[]\",\"name\":\"cpoolAprs\",\"components\":[{\"type\":\"address\",\"name\":\"tokenAddress\"},{\"type\":\"uint256\",\"name\":\"value\"}]}]},{\"type\":\"function\",\"name\":\"getBorrowRatesIndexesByMarkets\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[{\"type\":\"address[]\",\"name\":\"markets\"}],\"outputs\":[{\"type\":\"tuple[]\",\"name\":\"rates\",\"components\":[{\"type\":\"address\",\"name\":\"tokenAddress\"},{\"type\":\"uint256\",\"name\":\"value\"}]}]},{\"type\":\"function\",\"name\":\"getPoolCpoolApr\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[{\"type\":\"address\",\"name\":\"poolAddress\"},{\"type\":\"uint256\",\"name\":\"cpoolPrice\"}],\"outputs\":[{\"type\":\"uint256\",\"name\":\"apr\"}]},{\"type\":\"function\",\"name\":\"getSupplyRatesIndexesByMarkets\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[{\"type\":\"address[]\",\"name\":\"markets\"}],\"outputs\":[{\"type\":\"tuple[]\",\"name\":\"rates\",\"components\":[{\"type\":\"address\",\"name\":\"tokenAddress\"},{\"type\":\"uint256\",\"name\":\"value\"}]}]},{\"type\":\"function\",\"name\":\"getTotalBorrowsByMarkets\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[{\"type\":\"address[]\",\"name\":\"markets\"}],\"outputs\":[{\"type\":\"tuple[]\",\"name\":\"borrows\",\"components\":[{\"type\":\"address\",\"name\":\"tokenAddress\"},{\"type\":\"uint256\",\"name\":\"value\"}]}]},{\"type\":\"function\",\"name\":\"getTotalInterestsByMarkets\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[{\"type\":\"address[]\",\"name\":\"markets\"}],\"outputs\":[{\"type\":\"tuple[]\",\"name\":\"interests\",\"components\":[{\"type\":\"address\",\"name\":\"tokenAddress\"},{\"type\":\"uint256\",\"name\":\"value\"}]}]},{\"type\":\"function\",\"name\":\"getTotalLiquidityByMarkets\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[{\"type\":\"address[]\",\"name\":\"markets\"}],\"outputs\":[{\"type\":\"tuple[]\",\"name\":\"liquidity\",\"components\":[{\"type\":\"address\",\"name\":\"tokenAddress\"},{\"type\":\"uint256\",\"name\":\"value\"}]}]},{\"type\":\"function\",\"name\":\"getTotalPrincipalsByMarkets\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[{\"type\":\"address[]\",\"name\":\"markets\"}],\"outputs\":[{\"type\":\"tuple[]\",\"name\":\"principals\",\"components\":[{\"type\":\"address\",\"name\":\"tokenAddress\"},{\"type\":\"uint256\",\"name\":\"value\"}]}]},{\"type\":\"function\",\"name\":\"getTotalReservesByMarkets\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[{\"type\":\"address[]\",\"name\":\"markets\"}],\"outputs\":[{\"type\":\"tuple[]\",\"name\":\"reserves\",\"components\":[{\"type\":\"address\",\"name\":\"tokenAddress\"},{\"type\":\"uint256\",\"name\":\"value\"}]}]}]",
+	"transactionHash": "0xc56102fd1cd3e3d1753ba48605b0771d482f6da3513695be0900bab8b08a9280",
+	"receipt": {
+		"to": null,
+		"from": "0xe43420E1f83530AAf8ad94e6904FDbdc3556Da2B",
+		"contractAddress": "0x4a780a989266Db37824B96610B90Ca5dCb950cC1",
+		"transactionIndex": 7,
+		"gasUsed": {
+			"type": "BigNumber",
+			"hex": "0x1d08a3"
+		},
+		"logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008000000000000000000000008000000000000000000000000000000000800000000000000000000100000000000000000000000000000000000000000000000000000000000080000000000000000000000000000000000000000000000000000800000000000000000000000000200000000000000000080000000000000000000000000000000000000000004000000000000000000001000000000100000002000000000000100000000000000000000000000000000000000000000000000000000000000000000000900000",
+		"blockHash": "0x8a4a30aeb8db34916ffae12fd89fcfe9ce72aea0a69c393f58b9e3cc16f061e7",
+		"transactionHash": "0xc56102fd1cd3e3d1753ba48605b0771d482f6da3513695be0900bab8b08a9280",
+		"logs": [
+			{
+				"transactionIndex": 7,
+				"blockNumber": 33958576,
+				"transactionHash": "0xc56102fd1cd3e3d1753ba48605b0771d482f6da3513695be0900bab8b08a9280",
+				"address": "0x0000000000000000000000000000000000001010",
+				"topics": [
+					"0x4dfe1bbbcf077ddc3e01291eea2d5c70c2b422b415d95645b9adcfd678cb1d63",
+					"0x0000000000000000000000000000000000000000000000000000000000001010",
+					"0x000000000000000000000000e43420e1f83530aaf8ad94e6904fdbdc3556da2b",
+					"0x0000000000000000000000003a22c8bc68e98b0faf40f349dd2b2890fae01484"
+				],
+				"data": "0x000000000000000000000000000000000000000000000000001b0a2eaf7a78000000000000000000000000000000000000000000000000002dc6620329d7893300000000000000000000000000000000000000000000055f3b45c0b557030f7f0000000000000000000000000000000000000000000000002dab57d47a5d113300000000000000000000000000000000000000000000055f3b60cae4067d877f",
+				"logIndex": 14,
+				"blockHash": "0x8a4a30aeb8db34916ffae12fd89fcfe9ce72aea0a69c393f58b9e3cc16f061e7"
+			}
+		],
+		"blockNumber": 33958576,
+		"confirmations": 2,
+		"cumulativeGasUsed": {
+			"type": "BigNumber",
+			"hex": "0x1f46db"
+		},
+		"effectiveGasPrice": {
+			"type": "BigNumber",
+			"hex": "0xee6b2810"
+		},
+		"status": 1,
+		"type": 2,
+		"byzantium": true,
+		"events": [
+			{
+				"transactionIndex": 7,
+				"blockNumber": 33958576,
+				"transactionHash": "0xc56102fd1cd3e3d1753ba48605b0771d482f6da3513695be0900bab8b08a9280",
+				"address": "0x0000000000000000000000000000000000001010",
+				"topics": [
+					"0x4dfe1bbbcf077ddc3e01291eea2d5c70c2b422b415d95645b9adcfd678cb1d63",
+					"0x0000000000000000000000000000000000000000000000000000000000001010",
+					"0x000000000000000000000000e43420e1f83530aaf8ad94e6904fdbdc3556da2b",
+					"0x0000000000000000000000003a22c8bc68e98b0faf40f349dd2b2890fae01484"
+				],
+				"data": "0x000000000000000000000000000000000000000000000000001b0a2eaf7a78000000000000000000000000000000000000000000000000002dc6620329d7893300000000000000000000000000000000000000000000055f3b45c0b557030f7f0000000000000000000000000000000000000000000000002dab57d47a5d113300000000000000000000000000000000000000000000055f3b60cae4067d877f",
+				"logIndex": 14,
+				"blockHash": "0x8a4a30aeb8db34916ffae12fd89fcfe9ce72aea0a69c393f58b9e3cc16f061e7"
+			}
+		]
+	},
+	"args": [
+		"0x48D2666E96AA995a3E6a57Da0bEBC9b6AEafA00e"
+	]
+}

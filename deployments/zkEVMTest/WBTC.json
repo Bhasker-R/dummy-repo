@@ -1,0 +1,149 @@
+{
+	"address": "0x15795aadca3759d7b356DecE036c285b1FBb32aa",
+	"type": "default",
+	"abi": "[{\"type\":\"constructor\",\"payable\":false,\"inputs\":[{\"type\":\"string\",\"name\":\"name\"},{\"type\":\"string\",\"name\":\"symbol\"},{\"type\":\"uint8\",\"name\":\"decimals_\"}]},{\"type\":\"event\",\"anonymous\":false,\"name\":\"Approval\",\"inputs\":[{\"type\":\"address\",\"name\":\"owner\",\"indexed\":true},{\"type\":\"address\",\"name\":\"spender\",\"indexed\":true},{\"type\":\"uint256\",\"name\":\"value\",\"indexed\":false}]},{\"type\":\"event\",\"anonymous\":false,\"name\":\"Paused\",\"inputs\":[{\"type\":\"address\",\"name\":\"account\",\"indexed\":false}]},{\"type\":\"event\",\"anonymous\":false,\"name\":\"RoleAdminChanged\",\"inputs\":[{\"type\":\"bytes32\",\"name\":\"role\",\"indexed\":true},{\"type\":\"bytes32\",\"name\":\"previousAdminRole\",\"indexed\":true},{\"type\":\"bytes32\",\"name\":\"newAdminRole\",\"indexed\":true}]},{\"type\":\"event\",\"anonymous\":false,\"name\":\"RoleGranted\",\"inputs\":[{\"type\":\"bytes32\",\"name\":\"role\",\"indexed\":true},{\"type\":\"address\",\"name\":\"account\",\"indexed\":true},{\"type\":\"address\",\"name\":\"sender\",\"indexed\":true}]},{\"type\":\"event\",\"anonymous\":false,\"name\":\"RoleRevoked\",\"inputs\":[{\"type\":\"bytes32\",\"name\":\"role\",\"indexed\":true},{\"type\":\"address\",\"name\":\"account\",\"indexed\":true},{\"type\":\"address\",\"name\":\"sender\",\"indexed\":true}]},{\"type\":\"event\",\"anonymous\":false,\"name\":\"Transfer\",\"inputs\":[{\"type\":\"address\",\"name\":\"from\",\"indexed\":true},{\"type\":\"address\",\"name\":\"to\",\"indexed\":true},{\"type\":\"uint256\",\"name\":\"value\",\"indexed\":false}]},{\"type\":\"event\",\"anonymous\":false,\"name\":\"Unpaused\",\"inputs\":[{\"type\":\"address\",\"name\":\"account\",\"indexed\":false}]},{\"type\":\"function\",\"name\":\"DEFAULT_ADMIN_ROLE\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[],\"outputs\":[{\"type\":\"bytes32\"}]},{\"type\":\"function\",\"name\":\"DOMAIN_SEPARATOR\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[],\"outputs\":[{\"type\":\"bytes32\"}]},{\"type\":\"function\",\"name\":\"MINTER_ROLE\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[],\"outputs\":[{\"type\":\"bytes32\"}]},{\"type\":\"function\",\"name\":\"PAUSER_ROLE\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[],\"outputs\":[{\"type\":\"bytes32\"}]},{\"type\":\"function\",\"name\":\"allowance\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[{\"type\":\"address\",\"name\":\"owner\"},{\"type\":\"address\",\"name\":\"spender\"}],\"outputs\":[{\"type\":\"uint256\"}]},{\"type\":\"function\",\"name\":\"approve\",\"constant\":false,\"payable\":false,\"inputs\":[{\"type\":\"address\",\"name\":\"spender\"},{\"type\":\"uint256\",\"name\":\"amount\"}],\"outputs\":[{\"type\":\"bool\"}]},{\"type\":\"function\",\"name\":\"balanceOf\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[{\"type\":\"address\",\"name\":\"account\"}],\"outputs\":[{\"type\":\"uint256\"}]},{\"type\":\"function\",\"name\":\"burn\",\"constant\":false,\"payable\":false,\"inputs\":[{\"type\":\"uint256\",\"name\":\"amount\"}],\"outputs\":[]},{\"type\":\"function\",\"name\":\"burnFrom\",\"constant\":false,\"payable\":false,\"inputs\":[{\"type\":\"address\",\"name\":\"account\"},{\"type\":\"uint256\",\"name\":\"amount\"}],\"outputs\":[]},{\"type\":\"function\",\"name\":\"decimals\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[],\"outputs\":[{\"type\":\"uint8\"}]},{\"type\":\"function\",\"name\":\"decreaseAllowance\",\"constant\":false,\"payable\":false,\"inputs\":[{\"type\":\"address\",\"name\":\"spender\"},{\"type\":\"uint256\",\"name\":\"subtractedValue\"}],\"outputs\":[{\"type\":\"bool\"}]},{\"type\":\"function\",\"name\":\"faucet\",\"constant\":false,\"payable\":false,\"inputs\":[{\"type\":\"uint256\",\"name\":\"amount\"}],\"outputs\":[]},{\"type\":\"function\",\"name\":\"faucetTo\",\"constant\":false,\"payable\":false,\"inputs\":[{\"type\":\"address\",\"name\":\"receiver\"},{\"type\":\"uint256\",\"name\":\"amount\"}],\"outputs\":[]},{\"type\":\"function\",\"name\":\"getRoleAdmin\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[{\"type\":\"bytes32\",\"name\":\"role\"}],\"outputs\":[{\"type\":\"bytes32\"}]},{\"type\":\"function\",\"name\":\"getRoleMember\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[{\"type\":\"bytes32\",\"name\":\"role\"},{\"type\":\"uint256\",\"name\":\"index\"}],\"outputs\":[{\"type\":\"address\"}]},{\"type\":\"function\",\"name\":\"getRoleMemberCount\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[{\"type\":\"bytes32\",\"name\":\"role\"}],\"outputs\":[{\"type\":\"uint256\"}]},{\"type\":\"function\",\"name\":\"grantRole\",\"constant\":false,\"payable\":false,\"inputs\":[{\"type\":\"bytes32\",\"name\":\"role\"},{\"type\":\"address\",\"name\":\"account\"}],\"outputs\":[]},{\"type\":\"function\",\"name\":\"hasRole\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[{\"type\":\"bytes32\",\"name\":\"role\"},{\"type\":\"address\",\"name\":\"account\"}],\"outputs\":[{\"type\":\"bool\"}]},{\"type\":\"function\",\"name\":\"increaseAllowance\",\"constant\":false,\"payable\":false,\"inputs\":[{\"type\":\"address\",\"name\":\"spender\"},{\"type\":\"uint256\",\"name\":\"addedValue\"}],\"outputs\":[{\"type\":\"bool\"}]},{\"type\":\"function\",\"name\":\"mint\",\"constant\":false,\"payable\":false,\"inputs\":[{\"type\":\"address\",\"name\":\"to\"},{\"type\":\"uint256\",\"name\":\"amount\"}],\"outputs\":[]},{\"type\":\"function\",\"name\":\"name\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[],\"outputs\":[{\"type\":\"string\"}]},{\"type\":\"function\",\"name\":\"nonces\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[{\"type\":\"address\",\"name\":\"owner\"}],\"outputs\":[{\"type\":\"uint256\"}]},{\"type\":\"function\",\"name\":\"pause\",\"constant\":false,\"payable\":false,\"inputs\":[],\"outputs\":[]},{\"type\":\"function\",\"name\":\"paused\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[],\"outputs\":[{\"type\":\"bool\"}]},{\"type\":\"function\",\"name\":\"permit\",\"constant\":false,\"payable\":false,\"inputs\":[{\"type\":\"address\",\"name\":\"owner\"},{\"type\":\"address\",\"name\":\"spender\"},{\"type\":\"uint256\",\"name\":\"value\"},{\"type\":\"uint256\",\"name\":\"deadline\"},{\"type\":\"uint8\",\"name\":\"v\"},{\"type\":\"bytes32\",\"name\":\"r\"},{\"type\":\"bytes32\",\"name\":\"s\"}],\"outputs\":[]},{\"type\":\"function\",\"name\":\"renounceRole\",\"constant\":false,\"payable\":false,\"inputs\":[{\"type\":\"bytes32\",\"name\":\"role\"},{\"type\":\"address\",\"name\":\"account\"}],\"outputs\":[]},{\"type\":\"function\",\"name\":\"revokeRole\",\"constant\":false,\"payable\":false,\"inputs\":[{\"type\":\"bytes32\",\"name\":\"role\"},{\"type\":\"address\",\"name\":\"account\"}],\"outputs\":[]},{\"type\":\"function\",\"name\":\"supportsInterface\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[{\"type\":\"bytes4\",\"name\":\"interfaceId\"}],\"outputs\":[{\"type\":\"bool\"}]},{\"type\":\"function\",\"name\":\"symbol\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[],\"outputs\":[{\"type\":\"string\"}]},{\"type\":\"function\",\"name\":\"totalSupply\",\"constant\":true,\"stateMutability\":\"view\",\"payable\":false,\"inputs\":[],\"outputs\":[{\"type\":\"uint256\"}]},{\"type\":\"function\",\"name\":\"transfer\",\"constant\":false,\"payable\":false,\"inputs\":[{\"type\":\"address\",\"name\":\"to\"},{\"type\":\"uint256\",\"name\":\"amount\"}],\"outputs\":[{\"type\":\"bool\"}]},{\"type\":\"function\",\"name\":\"transferFrom\",\"constant\":false,\"payable\":false,\"inputs\":[{\"type\":\"address\",\"name\":\"from\"},{\"type\":\"address\",\"name\":\"to\"},{\"type\":\"uint256\",\"name\":\"amount\"}],\"outputs\":[{\"type\":\"bool\"}]},{\"type\":\"function\",\"name\":\"unpause\",\"constant\":false,\"payable\":false,\"inputs\":[],\"outputs\":[]}]",
+	"transactionHash": "0x39b8a4f7a5385e581e3798525501afe46ee02b0b6a8ba46139a2d3bfbcde32aa",
+	"receipt": {
+		"to": null,
+		"from": "0xe43420E1f83530AAf8ad94e6904FDbdc3556Da2B",
+		"contractAddress": "0x15795aadca3759d7b356DecE036c285b1FBb32aa",
+		"transactionIndex": 0,
+		"root": "0xc443e7a1c37a431cb2e0b11a0c6746037a644a168300560bfb026d61c9b2b4e1",
+		"gasUsed": {
+			"type": "BigNumber",
+			"hex": "0x20a4b0"
+		},
+		"logsBloom": "0x00000004000000000000002000000000000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000000800000000000000000000000000000000000000020000000000000000000800000000000000000000000000001000000000020000000000000000000000008000000800000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000001002000000000100002000000020000000000000000000000000000000000000000400000000000000000000800000",
+		"blockHash": "0x3e6bcc33b46b62e7712d52ea14e5ff18ea3fbee69535c959ce7595c0ed2ba49d",
+		"transactionHash": "0x39b8a4f7a5385e581e3798525501afe46ee02b0b6a8ba46139a2d3bfbcde32aa",
+		"logs": [
+			{
+				"transactionIndex": 0,
+				"blockNumber": 723446,
+				"transactionHash": "0x39b8a4f7a5385e581e3798525501afe46ee02b0b6a8ba46139a2d3bfbcde32aa",
+				"address": "0x15795aadca3759d7b356DecE036c285b1FBb32aa",
+				"topics": [
+					"0x2f8788117e7eff1d82e926ec794901d17c78024a50270940304540a733656f0d",
+					"0x0000000000000000000000000000000000000000000000000000000000000000",
+					"0x000000000000000000000000e43420e1f83530aaf8ad94e6904fdbdc3556da2b",
+					"0x000000000000000000000000e43420e1f83530aaf8ad94e6904fdbdc3556da2b"
+				],
+				"data": "0x",
+				"logIndex": 0,
+				"blockHash": "0x3e6bcc33b46b62e7712d52ea14e5ff18ea3fbee69535c959ce7595c0ed2ba49d"
+			},
+			{
+				"transactionIndex": 0,
+				"blockNumber": 723446,
+				"transactionHash": "0x39b8a4f7a5385e581e3798525501afe46ee02b0b6a8ba46139a2d3bfbcde32aa",
+				"address": "0x15795aadca3759d7b356DecE036c285b1FBb32aa",
+				"topics": [
+					"0x2f8788117e7eff1d82e926ec794901d17c78024a50270940304540a733656f0d",
+					"0x9f2df0fed2c77648de5860a4cc508cd0818c85b8b8a1ab4ceeef8d981c8956a6",
+					"0x000000000000000000000000e43420e1f83530aaf8ad94e6904fdbdc3556da2b",
+					"0x000000000000000000000000e43420e1f83530aaf8ad94e6904fdbdc3556da2b"
+				],
+				"data": "0x",
+				"logIndex": 1,
+				"blockHash": "0x3e6bcc33b46b62e7712d52ea14e5ff18ea3fbee69535c959ce7595c0ed2ba49d"
+			},
+			{
+				"transactionIndex": 0,
+				"blockNumber": 723446,
+				"transactionHash": "0x39b8a4f7a5385e581e3798525501afe46ee02b0b6a8ba46139a2d3bfbcde32aa",
+				"address": "0x15795aadca3759d7b356DecE036c285b1FBb32aa",
+				"topics": [
+					"0x2f8788117e7eff1d82e926ec794901d17c78024a50270940304540a733656f0d",
+					"0x65d7a28e3265b37a6474929f336521b332c1681b933f6cb9f3376673440d862a",
+					"0x000000000000000000000000e43420e1f83530aaf8ad94e6904fdbdc3556da2b",
+					"0x000000000000000000000000e43420e1f83530aaf8ad94e6904fdbdc3556da2b"
+				],
+				"data": "0x",
+				"logIndex": 2,
+				"blockHash": "0x3e6bcc33b46b62e7712d52ea14e5ff18ea3fbee69535c959ce7595c0ed2ba49d"
+			}
+		],
+		"blockNumber": 723446,
+		"confirmations": 1,
+		"cumulativeGasUsed": {
+			"type": "BigNumber",
+			"hex": "0x20a4b0"
+		},
+		"status": 1,
+		"type": 0,
+		"byzantium": true,
+		"events": [
+			{
+				"transactionIndex": 0,
+				"blockNumber": 723446,
+				"transactionHash": "0x39b8a4f7a5385e581e3798525501afe46ee02b0b6a8ba46139a2d3bfbcde32aa",
+				"address": "0x15795aadca3759d7b356DecE036c285b1FBb32aa",
+				"topics": [
+					"0x2f8788117e7eff1d82e926ec794901d17c78024a50270940304540a733656f0d",
+					"0x0000000000000000000000000000000000000000000000000000000000000000",
+					"0x000000000000000000000000e43420e1f83530aaf8ad94e6904fdbdc3556da2b",
+					"0x000000000000000000000000e43420e1f83530aaf8ad94e6904fdbdc3556da2b"
+				],
+				"data": "0x",
+				"logIndex": 0,
+				"blockHash": "0x3e6bcc33b46b62e7712d52ea14e5ff18ea3fbee69535c959ce7595c0ed2ba49d",
+				"args": [
+					"0x0000000000000000000000000000000000000000000000000000000000000000",
+					"0xe43420E1f83530AAf8ad94e6904FDbdc3556Da2B",
+					"0xe43420E1f83530AAf8ad94e6904FDbdc3556Da2B"
+				],
+				"event": "RoleGranted",
+				"eventSignature": "RoleGranted(bytes32,address,address)"
+			},
+			{
+				"transactionIndex": 0,
+				"blockNumber": 723446,
+				"transactionHash": "0x39b8a4f7a5385e581e3798525501afe46ee02b0b6a8ba46139a2d3bfbcde32aa",
+				"address": "0x15795aadca3759d7b356DecE036c285b1FBb32aa",
+				"topics": [
+					"0x2f8788117e7eff1d82e926ec794901d17c78024a50270940304540a733656f0d",
+					"0x9f2df0fed2c77648de5860a4cc508cd0818c85b8b8a1ab4ceeef8d981c8956a6",
+					"0x000000000000000000000000e43420e1f83530aaf8ad94e6904fdbdc3556da2b",
+					"0x000000000000000000000000e43420e1f83530aaf8ad94e6904fdbdc3556da2b"
+				],
+				"data": "0x",
+				"logIndex": 1,
+				"blockHash": "0x3e6bcc33b46b62e7712d52ea14e5ff18ea3fbee69535c959ce7595c0ed2ba49d",
+				"args": [
+					"0x9f2df0fed2c77648de5860a4cc508cd0818c85b8b8a1ab4ceeef8d981c8956a6",
+					"0xe43420E1f83530AAf8ad94e6904FDbdc3556Da2B",
+					"0xe43420E1f83530AAf8ad94e6904FDbdc3556Da2B"
+				],
+				"event": "RoleGranted",
+				"eventSignature": "RoleGranted(bytes32,address,address)"
+			},
+			{
+				"transactionIndex": 0,
+				"blockNumber": 723446,
+				"transactionHash": "0x39b8a4f7a5385e581e3798525501afe46ee02b0b6a8ba46139a2d3bfbcde32aa",
+				"address": "0x15795aadca3759d7b356DecE036c285b1FBb32aa",
+				"topics": [
+					"0x2f8788117e7eff1d82e926ec794901d17c78024a50270940304540a733656f0d",
+					"0x65d7a28e3265b37a6474929f336521b332c1681b933f6cb9f3376673440d862a",
+					"0x000000000000000000000000e43420e1f83530aaf8ad94e6904fdbdc3556da2b",
+					"0x000000000000000000000000e43420e1f83530aaf8ad94e6904fdbdc3556da2b"
+				],
+				"data": "0x",
+				"logIndex": 2,
+				"blockHash": "0x3e6bcc33b46b62e7712d52ea14e5ff18ea3fbee69535c959ce7595c0ed2ba49d",
+				"args": [
+					"0x65d7a28e3265b37a6474929f336521b332c1681b933f6cb9f3376673440d862a",
+					"0xe43420E1f83530AAf8ad94e6904FDbdc3556Da2B",
+					"0xe43420E1f83530AAf8ad94e6904FDbdc3556Da2B"
+				],
+				"event": "RoleGranted",
+				"eventSignature": "RoleGranted(bytes32,address,address)"
+			}
+		]
+	},
+	"args": [
+		"WBTC",
+		"WBTC",
+		8
+	]
+}
